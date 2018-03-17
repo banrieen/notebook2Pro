@@ -13,3 +13,33 @@ Access token:
 
 gist id
 83f877272cfde97c168d56bec828ce1e
+
+
+"*":
+  "autocomplete-python":
+    useKite: false
+  core:
+    disabledPackages: [
+      "linter-flake8"
+      "linter"
+      "markdown-image-paste"
+      "language-restructuredtext"
+      "linter-ui-default"
+    ]
+    packagesWithKeymapsDisabled: []
+    telemetryConsent: "limited"
+    uriHandlerRegistration: "always"
+  editor:
+    fontSize: 13
+  "exception-reporting":
+    userId: "9536573a-8ebf-4e48-bac6-c850779d06e3"
+  "linter-ui-default":
+    panelHeight: 359.20001220703125
+  "rst-preview-pandoc":
+    pandocOpts: "-frst -thtml --webtex"
+  "sync-settings":
+    _lastBackupHash: "4440defe23e914645b8560dbda9e548fbe05156a"
+    gistId: "83f877272cfde97c168d56bec828ce1e"
+    personalAccessToken: "0ec21d1faa729dacfd9ddca36d02f8ca602ebd56"
+  welcome:
+    showOnStartup: false
