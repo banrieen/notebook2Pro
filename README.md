@@ -6,3 +6,10 @@ BATHJ 等笔试题;
 概念理论;
 由于CSDN github 与我使用的git client：smartgit 兼容不太好，
 不方便协作，现将项目移到github: https://github.com/banrieen/python-resume.git
+
+
+Access token:
+83f877272cfde97c168d56bec828ce1e
+
+gist id
+83f877272cfde97c168d56bec828ce1e
