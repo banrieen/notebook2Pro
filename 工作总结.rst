@@ -1,0 +1,23 @@
+工作总结
+==============================================================
+
+职责业绩：质控部自动化性能测试和安全测试
+
+ 背景：3个产品组的 企业通信，商城，学习中心，OA 项目亟待验证性能，安全性。
+ 目标：执行性能指标测试，发现性能瓶颈，辅助性能调优；
+      执行安全审计测试，发现产品存在的安全缺陷，辅助解决安全问题。
+ 行动：基于 Jmeter, Nmon, Python, (power)shell Jenkins 建立自动化性能测试框架；
+      使用 IBM AppScan Standard 做安全审计扫描，通过 subprocess (Powershell) 或 Jenkins 将安全测试集成到自动化中；
+      基于 Robotframework, Python Selenium，Request，urlib(2),Pyunit,pywinauto 等完善 Web 功能自动化测试；
+      使用 Python Request, Jmeter，Curl 等开展接口测试；
+      使用 Kali，Web 调试工具实践渗透测试；
+      使用 Python Sphinx （支持markdown,rst,pdf,html） 整理文档；
+      使用 Github,Gitlab Jenkins 和 Java Spring 整合自动化测试平台。
+      制定性能测试方案，执行性能测试和瓶颈分析，输出性能测试报告；
+      制定安全性测试方案，梳理安全测试问题，输出安全测试报告。
+
+实现：1. 整合了性能，安全性，功能和接口自动化测试；
+     2. 整理工具脚本，文档，并对组员进行讲解培训；
+     3. 输出性能测试方案和性能测试报告；
+     4. 输出安全性测试方案和安全性测试报告；
+     5. 支撑性能优化和接口测试。
