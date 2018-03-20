@@ -1,0 +1,55 @@
+#include <iostream>
+
+using namespace std;
+
+public class DataStructure_QuictSort
+{
+    //划分子分区计算基准位置
+    int Partition(int[] arr,int nLower,int nUpper)
+    {
+        int pivot=arr[nLower]; //取第一个记录为基准记录；
+        int nLeft = nLower + 1 ; //加1 ，pivot 无需和自身比较；
+        int nRight = nUpper;
+        int temp;
+        do{
+           while(nLeft<=NRight&&arr[nLeft]<=-ivot)  //将nLeft逐渐增大，知道找到pivot的下标为止；
+           nLeft++;
+           while(nLeft<=nRight&&arr[nLeft]>pivot)   //将
+           nRight--;
+           //R[nLeft,nRight]区间的长度(元素数)大于1时，交换R[nLeft]和R[nRight]
+           if(nLeft<nRight)
+           {
+               temp=arr[nLeft];
+               arr[nLeft]=arr[nRight];
+               arr[nRight]=temp;
+               nLeft++;
+               nRight--;
+
+           }while(nLeft<nRight);  //当nLeft==nRight时，停止循环；
+           //把基准记录pivot放到正确位置，即nLeft和nRight同时指向的位置；
+           temp=arr[nLower;
+           arr[nLower]=arr[nLeft];
+           arr[nRight]=temp;
+           return nRight;
+
+        }
+    }
+
+   public void QuictSort(int[] arr,int nLower,int nUpper)
+   {
+       int pivotpos;  //基准下标；
+       if(nLower<nUpper)  //仅在区间长度大于1时才排序；
+        {
+            pivotpos=Partition(arr,nLower,nUpper); //划分子区间知道基准下标，（QuictSort的关键）；
+            QuictSort(arr,nLower,pivotpos+1);      //对做区间递归排序；
+            QuictSort(arr,pivotpos+1,nUpper);      //对有区间递归排序；
+        }
+
+   }
+}
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    return 0;
+}
