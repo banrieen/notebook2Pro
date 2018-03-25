@@ -1,0 +1,40 @@
+// fsopen.cpp : 定义控制台应用程序的入口点。
+//
+
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+#define ENDFILE "CTRL-Z"
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	const char NEWLN = '\n'; 
+	char next;
+	int charCount;
+	int lineCount;
+	lineCount = 0;
+
+	cout <<"Enter a line or press "<<ENDFILE<<":";
+	cin.get(next);              //get the first char of new line ;
+	while(!cin.eof())
+	{
+		charCount = 0;          //initialize character count for new line
+		while(next != NEWLN)
+		{
+			cout.put(next);
+			charCount++;
+			cin.get(next);
+		}
+		cout.put(NEWLN);
+		lineCount++;
+		cout<<"Number of characters in line"<<lineCount<<"is "<<charCount<<endl;
+		cout<<"Enter a line or press "<<ENDFILE<<": ";
+		cin.get(next);
+	}
+
+	cout<<endl<<"Number of line processed is "<<lineCount<<endl;
+
+
+	return 0;
+}
+

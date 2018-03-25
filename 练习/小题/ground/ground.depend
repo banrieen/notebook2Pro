@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1347783059 source:i:\c++\ground\main.cpp
+	<iostream>
+
+1347783135 source:i:\c++\ground\test.cpp
+	<iostream>
+
