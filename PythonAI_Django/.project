@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>PythonAI_Django</name>
+	<name>AI_object</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -14,5 +14,6 @@
 	<natures>
 		<nature>org.python.pydev.pythonNature</nature>
 		<nature>org.python.pydev.django.djangoNature</nature>
+		<nature>org.eclipse.linuxtools.tmf.project.nature</nature>
 	</natures>
 </projectDescription>
