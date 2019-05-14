@@ -24,6 +24,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.exe
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -101,3 +102,9 @@ ENV/
 .mypy_cache/
 .ipynb_checkpoints
 .sonarlint
+
+# IDE settings
+.idea
+.vscode
+.sonarlint
+.ipynb_checkpoints
