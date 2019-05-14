@@ -101,3 +101,4 @@ ENV/
 .mypy_cache/
 .ipynb_checkpoints
 .sonarlint
+.vscode

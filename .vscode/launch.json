@@ -1,18 +1,30 @@
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+        
+//         {
+//             "name": "Python: Current File",
+//             "type": "python",
+//             "request": "launch",
+//             "program": "${file}",
+//             "console": "integratedTerminal"
+//         },
+//     ]
+// }
+
 {
-   "version": "0.2.0",
-   "configurations": [
-       {
-           "name": "C++ Launch (GDB)",                
-           "type": "cppdbg",                         
-           "request": "launch",                        
-           "targetArchitecture": "x86",                
-           "program": "${workspaceRoot}\\${fileBasename}.exe",                 
-           "miDebuggerPath":"C:\\mingw-w64\\bin\\gdb.exe", 
-           "args": [],     
-           "stopAtEntry": false,                  
-           "cwd": "${workspaceRoot}",                  
-           "externalConsole": true,                  
-           "preLaunchTask": "g++"　　                  
-           }
-   ]
-}
+    "version": "0.2.0",
+     "configurations": [
+         {
+             "name": "(msvc) Launch",
+             "type": "cppvsdbg",
+             "request": "launch",
+             "program": "${workspaceFolder}helloworld.exe",
+             "args": [],
+             "stopAtEntry": true,
+             "cwd": "${workspaceFolder}",
+             "environment": [],
+             "externalConsole": false
+         }
+     ]
+ }
