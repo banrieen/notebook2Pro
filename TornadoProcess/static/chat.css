@@ -1,0 +1,46 @@
+body {
+    background: write;
+    margin: 10px;
+}
+
+body,
+input {
+    font-family: sans-serif;
+    font-size: 10px;
+    color: black;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: grey;
+}
+
+table {
+    border-collapse: collapse;
+    border: 0;
+}
+
+td {
+    border: o;
+    padding: 0;
+}
+
+#body {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#input {
+    margin-top: 0.5em;
+}
+
+#input .messaage {
+    padding-top: 0.25em;
+}
+
+#nav {
+    float: right;
+    z-index: 99;
+}
