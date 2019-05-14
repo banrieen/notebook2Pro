@@ -101,3 +101,9 @@ ENV/
 .mypy_cache/
 .ipynb_checkpoints
 .sonarlint
+
+# IDE settings
+.idea
+.vscode
+.sonarlint
+.ipynb_checkpoints
