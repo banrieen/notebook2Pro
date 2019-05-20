@@ -1,6 +1,10 @@
 
+阿里云基础服务
+===================================================
 
 XWiki
+---------------------------------------------------
+
 参考链接：https://hostpresto.com/community/tutorials/how-to-install-xwiki-on-centos-7/
 yum -y update
 wget http://download.forge.ow2.org/xwiki/xwiki-enterprise-installer-generic-8.1-standard.jar
@@ -11,6 +15,7 @@ nohup bash start_xwiki.sh -p 8090 &
 
 
 jupyter notebook 安装
+---------------------------------------------------
 
 启动jupyter
 jupyter notebook
@@ -42,6 +47,8 @@ $/usr/bin/jupyter-notebook --allow-root --notebook-dir=/home/LocalServices/exerc
 
 
 安装tuleap
+---------------------------------------------------
+
 阿里云的http 80 端口要选择http(80)而非tcp 80
 
 yum install -y  tuleap-plugin-agiledashboard  tuleap-plugin-graphontrackers  tuleap-theme-burningparrot  tuleap-theme-flamingparrot  tuleap-plugin-git tuleap-plugin-pullrequest
@@ -59,7 +66,8 @@ yum install -y  tuleap-plugin-agiledashboard  tuleap-plugin-graphontrackers  tul
   --mysql-server=localhost \
   --mysql-password=root
   
-* Docker Install Opreoject
+Docker Install Opreoject
+---------------------------------------------------
 
 sudo mkdir -p /usr/local/openproject{pgdata,logs,static}
  sudo docker run -d --restart=always -p 80:80 --name openproject -v /usr/local/share/openproject/pgdata:/var/lib/postgresql/9.6/main -v /usr/local/share/openproject/logs:/var/log/supervisior -v /usr/local/share/openproject/static:/var/db/openproject openproject/community:7

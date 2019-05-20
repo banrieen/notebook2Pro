@@ -3,6 +3,51 @@
 #------------------------------------------------------------------------------
 # Application(SingletonConfigurable) configuration
 #------------------------------------------------------------------------------
+import  io
+import os
+from notebook.utils import to_api_path
+
+_script_exporter = None
+
+def script_post_save(model, os_path, contents_manager, **kwargs):
+    """convert notebooks to markdown after save with nbconvert
+    replaces `jupyter notebook --script`
+    """
+    from nbconvert.exporters.script import ScriptExporter
+
+    if model['type'] != 'notebook':
+        return
+
+    global _script_exporter
+
+    if _script_exporter is None:
+        _script_exporter = ScriptExporter(parent=contents_manager)
+
+    log = contents_manager.log
+
+    base, ext = os.path.splitext(os_path)
+    script, resources = _script_exporter.from_filename(os_path)
+    script_fname = base + resources.get('output_extension', '.txt')
+    log.info("Saving script /%s", to_api_path(script_fname, contents_manager.root_dir))
+
+    with io.open(script_fname, 'w', encoding='utf-8') as f:
+        f.write(script)
+
+def scrub_output_pre_save(model, **kwargs):
+    """scrub output before saving notebooks"""
+    # only run on notebooks
+    if model['type'] != 'notebook':
+        return
+    # only run on nbformat v4
+    if model['content']['nbformat'] != 4:
+        return
+
+    for cell in model['content']['cells']:
+        if cell['cell_type'] != 'code':
+            continue
+        cell['outputs'] = []
+        cell['execution_count'] = None
+
 
 ## This is an application.
 
@@ -82,7 +127,7 @@
 #c.NotebookApp.allow_remote_access = False
 
 ## Whether to allow the user to run the notebook as root.
-#c.NotebookApp.allow_root = False
+c.NotebookApp.allow_root = True
 
 ## DEPRECATED use base_url
 #c.NotebookApp.base_project_url = '/'
@@ -721,7 +766,7 @@ c.NotebookApp.password = 'sha1:dcfd97bfcf5c:a2951f29f50b9e156b380af1c7866821362e
 c.FileContentsManager.post_save_hook = None
 
 ## 
-c.FileContentsManager.root_dir = 'notebook'
+#c.FileContentsManager.root_dir = 'home/notebook'
 
 ## DEPRECATED, use post_save_hook. Will be removed in Notebook 5.0
 #c.FileContentsManager.save_script = False

@@ -1,5 +1,5 @@
 ===================================
-企业面试训练 和 慕课学习
+编程训练 和 慕课学习
 ===================================
 
 1. 算法训练题当前以 Python 为主.
@@ -8,3 +8,28 @@
 
 
 Jupyter notebook： 同步到github 并且 发布到readdoc
+
+同步：
+* post_save_hook(model=model, os_path=os_path, contents_manager=cm)
+  在Jupyter notebook 编就后保存后触发
+
+* github webhook 在其他分支有提交或合并时，需要自定义实现扩展API支持 
+[File save hooks](https://jupyter-notebook.readthedocs.io/en/stable/extending/savehooks.html?highlight=hook)
+
+
+* Install sphinx:
+
+```
+On Linux or MacOS, you should open your terminal and run the following command.
+
+$ pip install -U sphinx
+
+On Windows, you should open Command Prompt (⊞Win-r and type cmd) and run the same command.
+
+C:\> pip install -U sphinx
+
+```
+* Build static page
+
+ sphinx-build -b html sourcedir builddir
+ or sphinx-build -b latexpdf sourcedir builddir
