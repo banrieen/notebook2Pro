@@ -1,5 +1,5 @@
 # Configuration file for jupyter-notebook.
-#  /root/.jupyter/jupyter_notebook_config.py
+# Default config path: /root/.jupyter/jupyter_notebook_config.py
 #------------------------------------------------------------------------------
 # Application(SingletonConfigurable) configuration
 #------------------------------------------------------------------------------
