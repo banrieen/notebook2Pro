@@ -754,7 +754,7 @@ c.NotebookApp.password = 'sha1:dcfd97bfcf5c:a2951f29f50b9e156b380af1c7866821362e
 #  
 #  - path: the filesystem path to the file just written - model: the model
 #  representing the file - contents_manager: this ContentsManager instance
-c.FileContentsManager.post_save_hook = script_post_save
+#  c.FileContentsManager.post_save_hook = script_post_save
 
 ## 
 #c.FileContentsManager.root_dir = 'home/notebook'
