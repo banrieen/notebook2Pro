@@ -13,6 +13,7 @@ Welcome to notebook's documentation!
    :glob:
 
    config/*
+   bashTips/*
 
 
 

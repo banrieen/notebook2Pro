@@ -32,3 +32,5 @@ C:\> pip install -U sphinx
 
  sphinx-build -b html sourcedir builddir
  or sphinx-build -b latexpdf sourcedir builddir
+
+    + 在Github.io 配置页面，不要使用Jekyll theme。
