@@ -5,6 +5,7 @@
 #------------------------------------------------------------------------------
 import  io
 import os
+import subprocess
 from notebook.utils import to_api_path
 
 _script_exporter = None
@@ -26,18 +27,31 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     if _mk_exporter is None:
         _mk_exporter = MarkdownExporter(parent=contents_manager)
     log = contents_manager.log
+    """ 要将指定codebook目录下的 .pynb .pdf 转换为 docs/_source/cookbook/*.rst 或 *.md
     # base, ext = os.path.splitext(os_path)
     # script, resources = _script_exporter.from_filename(os_path)
     # script_fname = base + resources.get('output_extension', '.txt')
     # log.info("Saving script /%s", to_api_path(script_fname, contents_manager.root_dir))
-    base, ext = os.path.splitext(os_path)
-    script, resources = _mk_exporter.from_filename(os_path)
-    script_fname = base + resources.get('output_extension', '.txt')
-    log.info("Saving markdown /%s", to_api_path(script_fname, contents_manager.root_dir))
-
-    with io.open(script_fname, 'w', encoding='utf-8') as f:
-        f.write(script)
+    # base, ext = os.path.splitext(os_path)
+    # script, resources = _mk_exporter.from_filename(os_path)
+    # script_fname = base + resources.get('output_extension', '.txt')
+    # log.info("Saving markdown /%s", to_api_path(script_fname, contents_manager.root_dir))
+    # breakpoint()
+    # with io.open(script_fname, 'w', encoding='utf-8') as f:
+    #     f.write(script) """
     
+    """ 提交 GitHub
+        将 notebook 提交 github 分支，
+        将本地分支合并到 master。
+    """
+    subprocess.call("git add --all", shell=True)
+    subprocess.call("git commit -m 'Jupyter notebook 更新'", shell=True)
+    subprocess.call("git push origin Algorithms", shell=True)
+    subprocess.call("git checkout master", shell=True)
+    subprocess.call("git merge Algorithms master", shell=True)
+    subprocess.call("git push origin master", shell=True)
+    subprocess.call("git checkout Algorithms", shell=True)
+
 
 
 ## This is an application.
@@ -754,7 +768,7 @@ c.NotebookApp.password = 'sha1:dcfd97bfcf5c:a2951f29f50b9e156b380af1c7866821362e
 #  
 #  - path: the filesystem path to the file just written - model: the model
 #  representing the file - contents_manager: this ContentsManager instance
-#  c.FileContentsManager.post_save_hook = script_post_save
+c.FileContentsManager.post_save_hook = script_post_save
 
 ## 
 #c.FileContentsManager.root_dir = 'home/notebook'
