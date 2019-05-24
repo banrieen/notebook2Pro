@@ -4,6 +4,7 @@
 'expression . Copy( Before , After )
 '其中 Before 和After参数表示要插在哪个工作表之前或者之后，如果都不提供的话，则表示移动到一个空白的新的工作簿。
 '以下是一个通用的将当前工作簿除了活动工作表以外的所有工作表另存为独立的工作簿文件的代码：
+'除了第一个sheet 之后的sheet 会按sheet 名字保存
 
 Sub save_sheets_as_single_book()
     Dim oWK As Worksheet
