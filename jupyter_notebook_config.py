@@ -23,9 +23,9 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
 
     if _script_exporter is None:
         _script_exporter = ScriptExporter(parent=contents_manager)
-    global _mk_explorter 
-    if _mk_exporter is None:
-        _mk_exporter = MarkdownExporter(parent=contents_manager)
+    #global _mk_exporter 
+    #if _mk_exporter is None:
+    #    _mk_exporter = MarkdownExporter(parent=contents_manager)
     log = contents_manager.log
     """ 要将指定codebook目录下的 .pynb .pdf 转换为 docs/_source/cookbook/*.rst 或 *.md
     # base, ext = os.path.splitext(os_path)
