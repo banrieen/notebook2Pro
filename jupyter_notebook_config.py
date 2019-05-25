@@ -23,7 +23,7 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
 
     if _script_exporter is None:
         _script_exporter = ScriptExporter(parent=contents_manager)
-    global _mk_explorter 
+    global _mk_exporter 
     if _mk_exporter is None:
         _mk_exporter = MarkdownExporter(parent=contents_manager)
     log = contents_manager.log
