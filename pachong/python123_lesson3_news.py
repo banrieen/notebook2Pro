@@ -28,6 +28,6 @@ def get_wangyi_news_titles():
     return titles
 
 if __name__ == "__main__":
-    heads_titles = get_news_titles()
-    print(heads_titles)
+    heads_titles = get_wangyi_news_titles()
+    print("".join(heads_titles))
 

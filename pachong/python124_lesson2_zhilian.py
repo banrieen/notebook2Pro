@@ -124,7 +124,6 @@ class Python123Pachong():
         newCsv.write_datas()
             
 
-
 if __name__ == "__main__":
     taskList = ['python','java']
     taskLink = 'https://sou.zhaopin.com/?p=1&jl=765&sf=0&st=0&kw=python&kt=3'
