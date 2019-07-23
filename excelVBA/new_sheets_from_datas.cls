@@ -1,4 +1,6 @@
-
+' 待整理宏
+'
+'
 Private Sub CommandButton1_Click()
 Dim a As Long, b As Long, c As Long
 Dim i As Integer, j As Integer, k As Integer
