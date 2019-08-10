@@ -1,6 +1,5 @@
-""" 富途面试题 """
 
-""" for循环中的lambda与闭包
+# for循环中的lambda与闭包
 # https://www.jianshu.com/p/84f3e0f4d218
 def funx():
     return [lambda x : i*x for i in range(0,4)]
@@ -9,19 +8,20 @@ def funx():
 print(funx())
 for fun in funx():
     print(fun)
-    print(fun(2)) """
+    print(fun(2)) 
 
-""" 赋值与地址引用
+# 赋值与地址引用
 def fun(x=0,y=[]):
     y.append(x)
     return y
 
 print(fun())
 print(fun(1,[1]))
-print(fun(2)) """
+print(fun(2))
 
 
-""" 数字i 都大于左边的数字，都小于右边的数字
+# 数字i 都大于左边的数字，都小于右边的数字
+
 listA = [1,2,4,3]
 rst = [1,2]
 def findI(listA):
@@ -39,10 +39,10 @@ def findI(listA):
             continue
     return rst
 print(listA)
-print(findI(listA)) """
+print(findI(listA)) 
 
 """ 斐波那契递归数组
- 楼梯有n阶台阶，上楼可以一步上1阶,2阶，3阶，编程序计算共有多少种不同的走法？
+ 楼梯有n阶台阶，上楼可以一步上1阶,2阶，3阶，编程序计算共有多少种不同的走法？"""
 
 
 def dianTi(n):
@@ -55,17 +55,18 @@ def dianTi(n):
 for n in range(10):
     print(dianTi(n))
 
-"""
+
 
 
 """ 跨域访问 JSONP
-aa.net -> bb.net
+aa.net -> bb.net """
 https://www.cnblogs.com/aszx0413/articles/1886819.html
 https://www.cnblogs.com/chenshishuo/p/4919224.html
  """
 
- """  类的重载 __new__
+ """  类
+# 重载 __new__
  https://howto.lintel.in/python-__new__-magic-method-explained/
  https://www.codevoila.com/post/68/new-and-init-in-python
-      初始化   __init__
- """
+# 初始化   __init__ 
+"""
