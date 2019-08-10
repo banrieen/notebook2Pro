@@ -1,26 +1,39 @@
 ﻿// HelloWorld.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
-using namespace std;
 #include <iostream>
+using namespace std;
 
 
 void quickSort(int a[], int, int);
+void merge(int a[], int low, int mid, int high);
+void mergeSort(int a[], int low, int high);
+void display(int a[], int len);
+void quick_sort(int array[], int low, int high);
 int main()
 {
-	std::cout << "Hello World!\n";
-	int array[] = { 34,65,12,43,67,5,78,10,3,70 }, k;
+	std::cout << "Hello Sort World!\n";
+	int array[] = { 34,65,12,43,67,5,78,10,3,70 };
 	int len = sizeof(array) / sizeof(int);
+	display(array, len);
 	cout << "The orginal arrayare:" << endl;
-	for (k = 0; k < len; k++)
-		cout << array[k] << ",";
-	cout << endl;
-	quickSort(array, 0, len - 1);
+	//quickSort(array, 0, len - 1);
+	int low, high;
+	low = 0;
+	high = len - 1;
+	//mergeSort(array, low, high);
+	quick_sort(array, low, high);
 	cout << "The sorted arrayare:" << endl;
-	for (k = 0; k < len; k++)
-		cout << array[k] << ",";
-	cout << endl;
+	display(array, len);
 	system("pause");
 	return 0;
+}
+
+void display(int array[],int len)
+{
+	int k;
+	for (k = 0; k < len; k++)
+		cout << array[k] << ",";
+	cout << endl;
 }
 
 void quickSort(int s[], int l, int r)
@@ -47,10 +60,55 @@ void quickSort(int s[], int l, int r)
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
 // 调试程序: F5 或调试 >“开始调试”菜单
 
-// 入门提示: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件
+
+
+void merge(int a[], int low, int mid, int high) {
+	// subarray1 = a[low..mid], subarray2 = a[mid+1..high], both sorted
+	// 归并排序
+	int N = high - low + 1;
+	int *b = new int[N]; // 讨论: 为什么我们需要一个临时的数组 b?
+	int left = low, right = mid + 1, bIdx = 0;
+	while (left <= mid && right <= high) // 归并
+		b[bIdx++] = (a[left] <= a[right]) ? a[left++] : a[right++];
+	while (left <= mid) b[bIdx++] = a[left++]; // leftover, if any
+	while (right <= high) b[bIdx++] = a[right++]; // leftover, if any
+	for (int k = 0; k < N; k++) a[low + k] = b[k]; // copy back
+}
+
+void mergeSort(int a[], int low, int high) {
+	// 要排序的数组是 a[low..high]
+	if (low < high) { // base case: low >= high (0 or 1 item)
+		int mid = (low + high) / 2;
+		mergeSort(a, low, mid); // 分成一半
+
+		mergeSort(a, mid + 1, high); // 递归地将它们排序
+		merge(a, low, mid, high); // 解决: 归并子程序
+	}
+}
+
+int partition(int a[], int i, int j)
+{
+	int pivot = a[i];
+	int m = i;
+	for (int k = i+1; k < j; k++)
+	{
+		if (a[k] < pivot)
+		{
+			m++;
+			swap(a[k], a[m]);
+		}
+	}
+	swap(a[i], a[m]);
+	return m;
+}
+
+void quick_sort(int array[], int low, int high)
+{
+	if (low < high)
+	{
+		int m = partition(array, low, high);
+		quick_sort(array, low, m-1);
+		quick_sort(array, m+1, high);
+	}
+	
+}
