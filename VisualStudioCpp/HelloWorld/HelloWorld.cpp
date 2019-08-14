@@ -11,6 +11,10 @@ void display(int a[], int len);
 void quick_sort(int array[], int low, int high);
 int main()
 {
+	int a, * iptr, * jptr, * kptr;
+	std::cout << 'The point init addr of : %s ' % &a;
+	iptr = &a;
+
 	std::cout << "Hello Sort World!\n";
 	int array[] = { 34,65,12,43,67,5,78,10,3,70 };
 	int len = sizeof(array) / sizeof(int);

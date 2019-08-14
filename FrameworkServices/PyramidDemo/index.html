@@ -1,0 +1,11 @@
+<!-- pyramid_wut4lunch/templates/index.pt -->
+<div tal:condition="lunches">
+  <ul>
+    <div tal:repeat="lunch lunches" tal:omit-tag="">
+      <li tal:content="string:${lunch.submitter} just ate ${lunch.food}"/>
+    </div>
+  </ul>
+</div>
+<div tal:condition="not:lunches">
+  <em>Nobody has eaten lunch, you must all be starving!</em>
+</div>

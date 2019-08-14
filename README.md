@@ -34,3 +34,10 @@ C:\> pip install -U sphinx
  or sphinx-build -b latexpdf sourcedir builddir
 
     + 在Github.io 配置页面，不要使用Jekyll theme。
+
+CookBook 为实际题目
+----------------------------------------------------
+
+* 按照 leetcode题型做了基本分类
+
+* 还包含 CoderByte，Kaggle 

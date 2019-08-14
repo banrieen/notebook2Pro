@@ -1,0 +1,137 @@
+<map version="1.0.1">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+<node COLOR="#000000" CREATED="1565769068102" ID="ID_514523847" MODIFIED="1565769277926" TEXT="&#x9ad8;&#x5e76;&#x53d1;">
+<edge COLOR="#666666" WIDTH="4"/>
+<node COLOR="#17a773" CREATED="1565754835704" ID="ID_382578890" MODIFIED="1565769277926" POSITION="right" TEXT="&#x9ad8;&#x5e76;&#x53d1;">
+<edge COLOR="#808080"/>
+<node COLOR="#00b439" CREATED="1565755446048" ID="ID_284046622" MODIFIED="1565769277926" TEXT="&#x57fa;&#x672c;&#x65b9;&#x5f0f;">
+<edge COLOR="#00b439" WIDTH="2"/>
+<node COLOR="#990000" CREATED="1565754845137" ID="ID_1993422018" MODIFIED="1565769277926" TEXT="HTML &#x9759;&#x6001;&#x5316;">
+<edge COLOR="#990000" WIDTH="1"/>
+<node COLOR="#111111" CREATED="1565755059199" ID="ID_86641046" MODIFIED="1565769277926" TEXT="CMS &#x5206;&#x53d1;&#x7cfb;&#x7edf;&#x52a0;&#x901f;">
+<edge COLOR="#111111" WIDTH="thin"/>
+</node>
+</node>
+<node COLOR="#990000" CREATED="1565755068808" ID="ID_1262829673" MODIFIED="1565769277941" TEXT="&#x56fe;&#x7247;&#x670d;&#x52a1;&#x5668;&#x5206;&#x79bb;">
+<edge COLOR="#990000" WIDTH="1"/>
+</node>
+<node COLOR="#990000" CREATED="1565755085736" ID="ID_431807488" MODIFIED="1565769277941" TEXT="&#x6570;&#x636e;&#x5e93;&#x96c6;&#x7fa4;&#x6216;&#x5e93;&#x8868;&#x6563;&#x5217;">
+<edge COLOR="#990000" WIDTH="1"/>
+<node COLOR="#111111" CREATED="1565755107696" ID="ID_936454917" MODIFIED="1565769277941" TEXT="&#x4e3b;&#x5907;&#xff0c;&#x8bfb;&#x5199;&#x5206;&#x79bb;">
+<edge COLOR="#111111" WIDTH="thin"/>
+</node>
+</node>
+<node COLOR="#990000" CREATED="1565755115045" ID="ID_1470995022" MODIFIED="1565769277941" TEXT="&#x7f13;&#x5b58;">
+<edge COLOR="#990000" WIDTH="1"/>
+</node>
+<node COLOR="#990000" CREATED="1565755138696" ID="ID_1799127726" MODIFIED="1565769277941" TEXT="&#x955c;&#x50cf;">
+<edge COLOR="#990000" WIDTH="1"/>
+<node COLOR="#111111" CREATED="1565755154464" ID="ID_179430063" MODIFIED="1565769277941" TEXT="&#x89e3;&#x51b3;&#x4e0d;&#x540c;&#x7f51;&#x7edc;&#x670d;&#x52a1;&#x5546;&#x6216;&#x4f4e;&#x4e8e;&#x63a5;&#x5165;&#x7684;&#x5dee;&#x5f02;">
+<edge COLOR="#111111" WIDTH="thin"/>
+</node>
+</node>
+<node COLOR="#990000" CREATED="1565755180478" ID="ID_406808918" MODIFIED="1565769277957" TEXT="&#x8d1f;&#x8f7d;&#x5747;&#x8861;">
+<edge COLOR="#990000" WIDTH="1"/>
+<node COLOR="#111111" CREATED="1565755195901" ID="ID_1322280138" MODIFIED="1565769277957" TEXT="&#x786c;&#x4ef6;&#x56db;&#x5c42;&#x4ea4;&#x6362;">
+<edge COLOR="#111111" WIDTH="thin"/>
+<node COLOR="#111111" CREATED="1565755239365" ID="ID_1006619359" MODIFIED="1565769277957" TEXT="&#x4f7f;&#x7528;&#x4fe1;&#x606f;&#x5305;&#x7684;&#x62a5;&#x5934;&#xff0c;&#x6839;&#x636e;&#x5e94;&#x7528;&#x533a;&#x95f4;&#x8bc6;&#x522b;&#x4e1a;&#x52a1;&#x6d41;&#xff0c;&#x5c06;&#x6574;&#x4e2a;&#x533a;&#x95f4;&#x6bb5;&#x7684;&#x4e1a;&#x52a1;&#x6d41;&#x5206;&#x914d;&#x5230;&#x5408;&#x9002;&#x7684;&#x5e94;&#x7528;&#x670d;&#x52a1;&#x5668;&#x4e0a;">
+<edge COLOR="#111111" WIDTH="thin"/>
+</node>
+<node COLOR="#111111" CREATED="1565755316572" ID="ID_954006389" MODIFIED="1565769277957" TEXT="&#x865a;IP">
+<edge COLOR="#111111" WIDTH="thin"/>
+</node>
+</node>
+<node COLOR="#111111" CREATED="1565755202596" ID="ID_894674028" MODIFIED="1565769277957" TEXT="&#x8f6f;&#x4ef6;&#x56db;&#x5c42;&#x4ea4;&#x6362;">
+<edge COLOR="#111111" WIDTH="thin"/>
+<node COLOR="#111111" CREATED="1565755355176" ID="ID_695546701" MODIFIED="1565769277957" TEXT="&#x865a;&#x62df;&#x5fae;&#x670d;&#x52a1;">
+<edge COLOR="#111111" WIDTH="thin"/>
+</node>
+</node>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1565756619735" ID="ID_1825236600" MODIFIED="1565769277957" TEXT="&#x90e8;&#x7f72;&#x65b9;&#x9762;">
+<edge COLOR="#00b439" WIDTH="2"/>
+<node COLOR="#990000" CREATED="1565756625882" ID="ID_802078080" MODIFIED="1565769277957" TEXT="Nginx&#x8981;&#x505a;&#x8d1f;&#x8f7d;&#x5747;&#x8861;">
+<edge COLOR="#990000" WIDTH="1"/>
+</node>
+<node COLOR="#990000" CREATED="1565756625882" ID="ID_582914854" MODIFIED="1565769277957" TEXT="&#x7a0b;&#x5e8f;&#x5c42;&#x9762;&#x505a;&#x591a;&#x7ebf;&#x7a0b;&#xff0c;&#x9501;&#x7b49;&#x673a;&#x5236;">
+<edge COLOR="#990000" WIDTH="1"/>
+</node>
+<node COLOR="#990000" CREATED="1565756625882" ID="ID_1496864330" MODIFIED="1565769277957" TEXT="&#x6570;&#x636e;&#x5e93;&#x5c42;&#x9762;&#x5904;&#x7406;">
+<edge COLOR="#990000" WIDTH="1"/>
+</node>
+<node COLOR="#990000" CREATED="1565756625882" ID="ID_1853848301" MODIFIED="1565769277957" TEXT="&#x670d;&#x52a1;&#x5668;&#x914d;&#x7f6e;&#x8981;&#x5c3d;&#x91cf;&#x9ad8;">
+<edge COLOR="#990000" WIDTH="1"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1565755466093" ID="ID_1008345671" MODIFIED="1565769277957" TEXT="python&#x5904;&#x7406;&#x9ad8;&#x5e76;&#x53d1;">
+<edge COLOR="#00b439" WIDTH="2"/>
+<node COLOR="#990000" CREATED="1565755480181" ID="ID_686021464" MODIFIED="1565769277957" TEXT="&#x534f;&#x7a0b;&#xff0c;&#x4e8b;&#x4ef6;&#x5faa;&#x73af;&#xff0c;&#x9ad8;&#x6548;IO&#x6a21;&#x578b;">
+<edge COLOR="#990000" WIDTH="1"/>
+</node>
+<node COLOR="#990000" CREATED="1565755508455" ID="ID_569802922" MODIFIED="1565769277957" TEXT="&#x591a;&#x8fdb;&#x7a0b;&#xff0c;Tornado">
+<edge COLOR="#990000" WIDTH="1"/>
+</node>
+<node COLOR="#990000" CREATED="1565755537601" ID="ID_699160063" MODIFIED="1565769277957" TEXT="&#x751f;&#x6210;&#x5668;">
+<edge COLOR="#990000" WIDTH="1"/>
+</node>
+</node>
+<node COLOR="#00b439" CREATED="1565755572425" ID="ID_1234986618" MODIFIED="1565769277972">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      IO&#27169;&#22411;
+    </p>
+    <p>
+      https://zhuanlan.zhihu.com/p/45539984
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge COLOR="#00b439" WIDTH="2"/>
+<node COLOR="#990000" CREATED="1565755576786" ID="ID_867348361" MODIFIED="1565769277972" TEXT="&#x540c;&#x6b65;IO">
+<edge COLOR="#990000" WIDTH="1"/>
+<node COLOR="#111111" CREATED="1565755608803" ID="ID_1050821349" MODIFIED="1565769277972" TEXT="&#x6bcf;&#x6b21;&#x53ea;&#x6709;&#x5904;&#x7406;&#x5b8c;&#x4e00;&#x4e2a;&#x8fde;&#x63a5;&#x624d;&#x4f1a;&#x5904;&#x7406;&#x4e0b;&#x4e00;&#x4e2a;">
+<edge COLOR="#111111" WIDTH="thin"/>
+</node>
+</node>
+<node COLOR="#990000" CREATED="1565755632650" ID="ID_868153729" MODIFIED="1565769277972" TEXT="&#x975e;&#x963b;&#x585e;IO">
+<edge COLOR="#990000" WIDTH="1"/>
+<node COLOR="#111111" CREATED="1565755657744" ID="ID_1186973403" MODIFIED="1565769277972" TEXT="&#x4e0d;&#x4f1a;&#x963b;&#x585e;&#x540e;&#x9762;&#x7684;&#x4ee3;&#x7801;&#xff0c;&#x901a;&#x8fc7;while &#x5faa;&#x73af;&#x663e;&#x793a;&#x8bbf;&#x95ee;&#x5185;&#x6838;&#x6570;&#x636e;&#x662f;&#x5426;&#x51c6;&#x5907;&#x597d;">
+<edge COLOR="#111111" WIDTH="thin"/>
+</node>
+<node COLOR="#111111" CREATED="1565755715017" ID="ID_1497233380" MODIFIED="1565769277972" TEXT="while &#x8017;&#x7528;CPU">
+<edge COLOR="#111111" WIDTH="thin"/>
+</node>
+</node>
+<node COLOR="#990000" CREATED="1565755728834" ID="ID_887022510" MODIFIED="1565769277972" TEXT="&#x591a;&#x8def;&#x590d;&#x7528;IO">
+<edge COLOR="#990000" WIDTH="1"/>
+<node COLOR="#111111" CREATED="1565755775188" ID="ID_566816831" MODIFIED="1565769277972" TEXT="select">
+<edge COLOR="#111111" WIDTH="thin"/>
+</node>
+<node COLOR="#111111" CREATED="1565755781007" ID="ID_850051776" MODIFIED="1565769277972" TEXT="poll">
+<edge COLOR="#111111" WIDTH="thin"/>
+</node>
+<node COLOR="#111111" CREATED="1565755783497" ID="ID_590987354" MODIFIED="1565769277972" TEXT="epoll">
+<edge COLOR="#111111" WIDTH="thin"/>
+<node COLOR="#111111" CREATED="1565757974402" ID="ID_1538694801" MODIFIED="1565769277988" TEXT="epoll&#x8fd9;&#x79cd;&#x591a;&#x8def;&#x590d;&#x7528;&#x5c31;&#x7eea;&#x901a;&#x77e5;&#x6280;&#x672f;&#x786e;&#x5b9e;&#x9002;&#x5408;&#x6d77;&#x91cf;&#x5e76;&#x53d1;&#x957f;&#x94fe;&#x8fde;&#x63a5;&#x7684;&#x573a;&#x666f;&#x4e0b;&#xff0c;&#x4e0e;select/poll&#x7b49;&#x76f8;&#x6bd4;&#xff0c;&#x5b83;&#x53bb;&#x9664;&#x4e86;&#x6700;&#x5927;&#x8fde;&#x63a5;&#x6570;&#x7684;&#x9650;&#x5236;&#xff0c;&#x4e5f;&#x51cf;&#x5c11;&#x4e86;&#x5728;&#x5185;&#x6838;&#x6001;&#x548c;&#x7528;&#x6237;&#x6001;&#x4e4b;&#x95f4;&#x590d;&#x5236;&#x6587;&#x4ef6;&#x63cf;&#x8ff0;&#x7b26;&#x7684;&#x5f00;&#x9500;&#x3002;">
+<edge COLOR="#111111" WIDTH="thin"/>
+</node>
+</node>
+<node COLOR="#111111" CREATED="1565755874092" ID="ID_1353422222" MODIFIED="1565769277995" TEXT="select,poll&#x7531;&#x4e8e;&#x8bbe;&#x8ba1;&#x7684;&#x95ee;&#x9898;&#xff0c;&#x5f53;&#x5904;&#x7406;&#x8fde;&#x63a5;&#x8fc7;&#x591a;&#x4f1a;&#x9020;&#x6210;&#x6027;&#x80fd;&#x7ebf;&#x6027;&#x4e0b;&#x964d;&#xff0c;&#x800c;epoll&#x662f;&#x5728;&#x524d;&#x4eba;&#x7684;&#x7ecf;&#x9a8c;&#x4e0a;&#x505a;&#x8fc7;&#x6539;&#x8fdb;&#x7684;&#x89e3;&#x51b3;&#x65b9;&#x6848;&#x3002;&#x4e0d;&#x4f1a;&#x6709;&#x6b64;&#x95ee;&#x9898;&#x3002;">
+<edge COLOR="#111111" WIDTH="thin"/>
+</node>
+</node>
+<node COLOR="#990000" CREATED="1565755878553" ID="ID_743024956" MODIFIED="1565769277995" TEXT="&#x4fe1;&#x53f7;&#x9a71;&#x52a8;&#x5f0f;IO">
+<edge COLOR="#990000" WIDTH="1"/>
+</node>
+<node COLOR="#990000" CREATED="1565756047529" ID="ID_65445079" MODIFIED="1565769277995" TEXT="&#x5f02;&#x6b65;&#x975e;&#x963b;&#x585e;IO">
+<edge COLOR="#990000" WIDTH="1"/>
+</node>
+</node>
+</node>
+</node>
+</map>
