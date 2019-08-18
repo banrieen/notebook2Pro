@@ -22,8 +22,10 @@ def main():
     sleep(6)
     print('All Done at: ',ctime())
 
+
+# 采用同步锁
+
 def loop_lock(nloop, nsec, lock):
-    
     print('Start loop: ', nloop, ' at ',ctime())
     sleep(nsec)
     print('loop ',nloop, ' done at: ',ctime())
