@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-""" 找钱问题
+""" 找零钱问题
 # 对于现实生活中的找零问题，假设有数目不限，面值为2,5,10的硬币, 求出找零方案。
-# 
+# 发现这个问题跟 鸡兔同笼，背包问题
 # 对于此类问题，贪心算法可以找到近似最优解；
 # 动态规划可以找到最优解；其中也可以根据具体情况做一些优化。
 # 
@@ -82,7 +82,7 @@ def get_DP_set_from_min(moneyCounts, priceN):
     # 动态规划
     
     # 尽量使用小额面值，这样张数最多，在张数限制下确定是否有解
-    # 时间复杂度为 面值种类数M，空间复杂度为O(1),结果的 rst 用的一个有限 dict
+    # 时间复杂度 O(MN),M为面值种类数，N为给定的找零的钱数；空间复杂度为O(1),结果的 rst 用的一个有限 dict
     moneyCounts = sorted(moneyCounts.items(), key=lambda x:x[0], reverse=False)
     rst = {moneyValue:0 for moneyValue, count in moneyCounts}
     if sum(moneyValue * count for moneyValue, count in moneyCounts) < priceN:
@@ -147,5 +147,4 @@ def display(rst, price):
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
-
 
