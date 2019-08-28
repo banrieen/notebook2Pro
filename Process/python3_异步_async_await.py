@@ -53,7 +53,6 @@ Future 对象有时会由库和某些 asyncio API 暴露给用户，用作可等
  """
 async def main():
     await function_that_returns_a_future_object()
-
     # this is also valid:
     await asyncio.gather(
         function_that_returns_a_future_object(),
@@ -82,6 +81,7 @@ async def old_main():
         raise TimeoutError("Timeout !")
 
 # 并发运行任务
+mget, mset
 
 async def factorial(name, number):
     f = 1 

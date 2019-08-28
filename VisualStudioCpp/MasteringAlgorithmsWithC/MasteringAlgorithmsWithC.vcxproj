@@ -153,9 +153,11 @@
   <ItemGroup>
     <ClCompile Include="BeautyOfPrograming.cpp" />
     <ClCompile Include="MasteringAlgorithmsWithC.cpp" />
+    <ClCompile Include="OpenJudge.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BeautyOfPrograming.h" />
+    <ClInclude Include="OpenJudge.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
