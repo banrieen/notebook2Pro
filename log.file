@@ -7,3 +7,10 @@ M	log.file
 Your branch is ahead of 'origin/master' by 17 commits.
   (use "git push" to publish your local commits)
 Already up-to-date.
+[master eae9eb3] Jupyter notebook 更新
+ 2 files changed, 37 insertions(+), 2 deletions(-)
+Already up-to-date.
+M	log.file
+Your branch is ahead of 'origin/master' by 18 commits.
+  (use "git push" to publish your local commits)
+Already up-to-date.
