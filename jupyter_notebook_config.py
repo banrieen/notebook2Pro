@@ -44,15 +44,20 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
         将 notebook 提交 github 分支，
         将本地分支合并到 master。
     """
-    subprocess.call("git add --all", shell=True)
-    subprocess.call("git commit -m 'Jupyter notebook 更新'", shell=True)
-    subprocess.call("git pull origin Algorithms", shell=True)    
-    subprocess.call("git push origin Algorithms", shell=True)
-    subprocess.call("git checkout master", shell=True)
-    subprocess.call("git merge Algorithms master", shell=True)
-    # subprocess.call("git push origin master", shell=True)
-    subprocess.call("git pull origin master", shell=True)
-    subprocess.call("git checkout Algorithms", shell=True)
+    try:
+        subprocess.call("git add --all", shell=True)
+        subprocess.call("git commit -m 'Jupyter notebook 更新'", shell=True) 
+        subprocess.call("git pull origin Algorithms", shell=True)   
+        subprocess.call("git push origin Algorithms", shell=True)
+        # subprocess.call("git checkout master", shell=True)
+        # subprocess.call("git merge Algorithms master", shell=True)
+        # subprocess.call("git push origin master", shell=True)
+        # subprocess.call("git pull origin master", shell=True)
+        
+        subprocess.call("git checkout Algorithms", shell=True)
+    except:
+        subprocess.call("git stash", shell=True)
+    
 
 
 
