@@ -1,16 +1,51 @@
 ﻿// HelloWorld.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
 //
+
 #include <iostream>
+#include "Calculator.h"
 using namespace std;
 
+int main()
+{
+	double x = 0.0;
+	double y = 0.0;
+	double result = 0.0;
+    char oper = '+';
+	cout << "输入要计算的数字： " << endl;
+	Calculator H;
+	while (true)
+	{
+		cin >> x >> oper >> y;
+		result = H.Calculate(x, oper, y);
+		cout << "Result is: " << result << endl;
+	}
+
+}
 
 void quickSort(int a[], int, int);
 void merge(int a[], int low, int mid, int high);
 void mergeSort(int a[], int low, int high);
 void display(int a[], int len);
 void quick_sort(int array[], int low, int high);
-int main()
+
+
+int main_bak_cpu()
 {
+	for (; ; )
+	{
+		for (int i = 0; i < 960000; i++)
+			;
+		//sleep(10);
+	}
+	return 0;
+}
+
+int main_bak()
+{
+	int a, *iptr, *jptr, *kptr;
+	//cout << 'The point init addr of : '<< &a;
+	iptr = &a;
+
 	std::cout << "Hello Sort World!\n";
 	int array[] = { 34,65,12,43,67,5,78,10,3,70 };
 	int len = sizeof(array) / sizeof(int);
