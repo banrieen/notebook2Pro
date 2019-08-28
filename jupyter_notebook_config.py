@@ -58,7 +58,13 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     except:
         subprocess.call("git stash", shell=True)
     
-
+def script_pre_save(model, os_path, contents_manager, **kwargs):
+    try:
+        subprocess.call("git checkout remotes/origin/Algorithms", shell=True)
+        subprocess.call("git merge master  remotes/origin/Algorithms", shell=True)
+        subprocess.call("git pull origin  remotes/origin/Algorithms", shell=True)           
+    except:
+        subprocess.call("git stash", shell=True)
 
 
 ## This is an application.
@@ -713,7 +719,7 @@ c.NotebookApp.password = 'sha1:dcfd97bfcf5c:a2951f29f50b9e156b380af1c7866821362e
 #    Modifying this dict will affect the file that is stored.
 #  - path: the API path of the save destination
 #  - contents_manager: this ContentsManager instance
-#c.ContentsManager.pre_save_hook = None
+c.ContentsManager.pre_save_hook = script_pre_save
 
 ## 
 #c.ContentsManager.root_dir = '/'
