@@ -1,0 +1,144 @@
+[D 17:10:55.867 NotebookApp] Searching ['/home/notebook', '/root/.jupyter', '/usr/etc/jupyter', '/usr/local/etc/jupyter', '/etc/jupyter'] for config files
+[D 17:10:55.868 NotebookApp] Looking for jupyter_config in /etc/jupyter
+[D 17:10:55.868 NotebookApp] Looking for jupyter_config in /usr/local/etc/jupyter
+[D 17:10:55.869 NotebookApp] Looking for jupyter_config in /usr/etc/jupyter
+[D 17:10:55.869 NotebookApp] Looking for jupyter_config in /root/.jupyter
+[D 17:10:55.869 NotebookApp] Looking for jupyter_config in /home/notebook
+[D 17:10:55.870 NotebookApp] Looking for jupyter_notebook_config in /home/notebook
+[D 17:10:55.871 NotebookApp] Loaded config file: /home/notebook/jupyter_notebook_config.py
+[I 17:10:55.881 NotebookApp] Writing notebook server cookie secret to /run/user/0/jupyter/notebook_cookie_secret
+[D 17:10:56.188 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/etc/jupyter/jupyter_notebook_config.json
+[D 17:10:56.189 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/usr/local/etc/jupyter/jupyter_notebook_config.json
+[D 17:10:56.190 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/usr/etc/jupyter/jupyter_notebook_config.d/ipyparallel-serverextension.json
+    	/usr/etc/jupyter/jupyter_notebook_config.json
+[D 17:10:56.191 NotebookApp] Paths used for configuration of jupyter_notebook_config: 
+    	/root/.jupyter/jupyter_notebook_config.json
+[I 17:10:56.380 NotebookApp] Loading IPython parallel extension
+[D 17:10:56.414 NotebookApp] [jupyter_nbextensions_configurator] Loading 0.4.1
+[D 17:10:56.414 NotebookApp] [jupyter_nbextensions_configurator]   Editing templates path to add /usr/lib/python3.6/site-packages/jupyter_nbextensions_configurator/templates
+[D 17:10:56.414 NotebookApp] [jupyter_nbextensions_configurator]   Editing nbextensions path to add /usr/lib/python3.6/site-packages/jupyter_nbextensions_configurator/static
+[D 17:10:56.414 NotebookApp] [jupyter_nbextensions_configurator]   Adding new handlers
+[I 17:10:56.415 NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
+[I 17:10:56.416 NotebookApp] Serving notebooks from local directory: /home/notebook
+[I 17:10:56.416 NotebookApp] The Jupyter Notebook is running at:
+[I 17:10:56.416 NotebookApp] http://(izwz90ajic0vbw7o4pj6xyz or 127.0.0.1):8888/
+[I 17:10:56.416 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 17:11:05.593 NotebookApp] Clearing invalid/expired login cookie username-120-78-176-136-8888
+[W 17:11:05.594 NotebookApp] Forbidden
+[W 17:11:05.595 NotebookApp] 403 GET /api/sessions?_=1566970307466 (183.42.56.44) 3.49ms referer=http://120.78.176.136:8888/tree/cookBook
+[W 17:11:05.596 NotebookApp] Clearing invalid/expired login cookie username-120-78-176-136-8888
+[W 17:11:05.596 NotebookApp] Forbidden
+[W 17:11:05.597 NotebookApp] 403 GET /api/terminals?_=1566970307467 (183.42.56.44) 0.98ms referer=http://120.78.176.136:8888/tree/cookBook
+[I 17:11:12.289 NotebookApp] 302 GET /tree/cookBook (183.42.56.44) 0.94ms
+[D 17:11:12.373 NotebookApp] Using contents: services/contents
+[D 17:11:12.413 NotebookApp] Path base/images/favicon.ico served from /usr/lib/python3.6/site-packages/notebook/static/base/images/favicon.ico
+[D 17:11:12.414 NotebookApp] Path components/jquery-ui/themes/smoothness/jquery-ui.min.css served from /usr/lib/python3.6/site-packages/notebook/static/components/jquery-ui/themes/smoothness/jquery-ui.min.css
+[D 17:11:12.414 NotebookApp] Path components/jquery-typeahead/dist/jquery.typeahead.min.css served from /usr/lib/python3.6/site-packages/notebook/static/components/jquery-typeahead/dist/jquery.typeahead.min.css
+[D 17:11:12.414 NotebookApp] Path style/style.min.css served from /usr/lib/python3.6/site-packages/notebook/static/style/style.min.css
+[D 17:11:12.415 NotebookApp] Path auth/css/override.css served from /usr/lib/python3.6/site-packages/notebook/static/auth/css/override.css
+[D 17:11:12.416 NotebookApp] Path components/es6-promise/promise.min.js served from /usr/lib/python3.6/site-packages/notebook/static/components/es6-promise/promise.min.js
+[D 17:11:12.416 NotebookApp] Path components/preact/index.js served from /usr/lib/python3.6/site-packages/notebook/static/components/preact/index.js
+[D 17:11:12.416 NotebookApp] Path components/proptypes/index.js served from /usr/lib/python3.6/site-packages/notebook/static/components/proptypes/index.js
+[D 17:11:12.416 NotebookApp] Path components/preact-compat/index.js served from /usr/lib/python3.6/site-packages/notebook/static/components/preact-compat/index.js
+[D 17:11:12.417 NotebookApp] Path components/requirejs/require.js served from /usr/lib/python3.6/site-packages/notebook/static/components/requirejs/require.js
+[D 17:11:12.417 NotebookApp] Path base/images/logo.png served from /usr/lib/python3.6/site-packages/notebook/static/base/images/logo.png
+[D 17:11:12.418 NotebookApp] 200 GET /login?next=%2Ftree%2FcookBook (183.42.56.44) 47.31ms
+[D 17:11:13.801 NotebookApp] 200 GET /static/components/jquery-typeahead/dist/jquery.typeahead.min.css?v=7afb461de36accb1aa133a1710f5bc56 (183.42.56.44) 1.95ms
+[D 17:11:13.803 NotebookApp] 200 GET /static/components/jquery-ui/themes/smoothness/jquery-ui.min.css?v=3c2a865c832a1322285c55c6ed99abb2 (183.42.56.44) 1.15ms
+[D 17:11:13.872 NotebookApp] 304 GET /static/style/style.min.css?v=4b4b8cb1e49605137f77fed041f8922b (183.42.56.44) 1.47ms
+[D 17:11:13.952 NotebookApp] Path custom.css served from /usr/lib/python3.6/site-packages/notebook/static/custom/custom.css
+[D 17:11:13.953 NotebookApp] 304 GET /custom/custom.css (183.42.56.44) 1.62ms
+[D 17:11:13.954 NotebookApp] 304 GET /static/components/es6-promise/promise.min.js?v=f004a16cb856e0ff11781d01ec5ca8fe (183.42.56.44) 0.82ms
+[D 17:11:13.955 NotebookApp] 304 GET /static/components/proptypes/index.js?v=c40890eb04df9811fcc4d47e53a29604 (183.42.56.44) 0.63ms
+[D 17:11:13.956 NotebookApp] 304 GET /static/auth/css/override.css?v=19ec59d2c4f1203c49fe47462028cd9a (183.42.56.44) 0.65ms
+[D 17:11:13.958 NotebookApp] 304 GET /static/components/preact/index.js?v=00a2fac73c670ce39ac53d26640eb542 (183.42.56.44) 0.69ms
+[D 17:11:13.984 NotebookApp] 304 GET /static/components/preact-compat/index.js?v=e88089d5b9ae96629d5b296428cbaed0 (183.42.56.44) 1.13ms
+[D 17:11:14.012 NotebookApp] 304 GET /static/components/requirejs/require.js?v=951f856e81496aaeec2e71a1c2c0d51f (183.42.56.44) 1.13ms
+[D 17:11:14.072 NotebookApp] 304 GET /static/base/images/logo.png?v=641991992878ee24c6f3826e81054a0f (183.42.56.44) 1.29ms
+[D 17:11:14.123 NotebookApp] Path auth/js/main.min.js served from /usr/lib/python3.6/site-packages/notebook/static/auth/js/main.min.js
+[D 17:11:14.125 NotebookApp] 200 GET /static/auth/js/main.min.js?v=20190828171055 (183.42.56.44) 1.89ms
+[D 17:11:14.252 NotebookApp] 200 GET /static/base/images/favicon.ico?v=97c6417ed01bdc0ae3ef32ae4894fd03 (183.42.56.44) 1.46ms
+[I 17:11:18.013 NotebookApp] 302 POST /login?next=%2Ftree%2FcookBook (183.42.56.44) 1.56ms
+[D 17:11:18.106 NotebookApp] Using contents: services/contents
+[D 17:11:18.145 NotebookApp] Path tree/js/main.min.js served from /usr/lib/python3.6/site-packages/notebook/static/tree/js/main.min.js
+[D 17:11:18.148 NotebookApp] 200 GET /tree/cookBook (183.42.56.44) 43.90ms
+[D 17:11:18.300 NotebookApp] 304 GET /custom/custom.css (183.42.56.44) 1.32ms
+[D 17:11:18.600 NotebookApp] Path services/contents.js served from /usr/lib/python3.6/site-packages/notebook/static/services/contents.js
+[D 17:11:18.601 NotebookApp] 200 GET /static/services/contents.js?v=20190828171055 (183.42.56.44) 1.77ms
+[D 17:11:18.740 NotebookApp] Paths used for configuration of tree: 
+    	/etc/jupyter/nbconfig/tree.json
+[D 17:11:18.741 NotebookApp] Paths used for configuration of tree: 
+    	/usr/local/etc/jupyter/nbconfig/tree.json
+[D 17:11:18.742 NotebookApp] Paths used for configuration of tree: 
+    	/usr/etc/jupyter/nbconfig/tree.d/ipyparallel-nbextension.json
+    	/usr/etc/jupyter/nbconfig/tree.json
+[D 17:11:18.742 NotebookApp] Paths used for configuration of tree: 
+    	/root/.jupyter/nbconfig/tree.json
+[D 17:11:18.743 NotebookApp] 200 GET /api/config/tree?_=1566983478501 (183.42.56.44) 4.44ms
+[D 17:11:18.745 NotebookApp] Paths used for configuration of common: 
+    	/etc/jupyter/nbconfig/common.json
+[D 17:11:18.745 NotebookApp] Paths used for configuration of common: 
+    	/usr/local/etc/jupyter/nbconfig/common.json
+[D 17:11:18.746 NotebookApp] Paths used for configuration of common: 
+    	/usr/etc/jupyter/nbconfig/common.json
+[D 17:11:18.746 NotebookApp] Paths used for configuration of common: 
+    	/root/.jupyter/nbconfig/common.json
+[D 17:11:18.747 NotebookApp] 200 GET /api/config/common?_=1566983478502 (183.42.56.44) 3.04ms
+[D 17:11:18.748 NotebookApp] 200 GET /api/terminals?_=1566983478503 (183.42.56.44) 0.67ms
+[D 17:11:18.760 NotebookApp] Found kernel javascript in /root/.local/share/jupyter/kernels
+[D 17:11:18.760 NotebookApp] Found kernel bash in /usr/local/share/jupyter/kernels
+[D 17:11:18.760 NotebookApp] Found kernel python3 in /usr/share/jupyter/kernels
+[D 17:11:18.765 NotebookApp] 304 GET /api/kernelspecs (183.42.56.44) 5.75ms
+[D 17:11:18.767 NotebookApp] 200 GET /api/sessions?_=1566983478504 (183.42.56.44) 1.58ms
+[D 17:11:18.804 NotebookApp] 200 GET /api/terminals?_=1566983478505 (183.42.56.44) 0.88ms
+[D 17:11:18.844 NotebookApp] Path custom.js served from /usr/lib/python3.6/site-packages/notebook/static/custom/custom.js
+[D 17:11:18.844 NotebookApp] 200 GET /custom/custom.js?v=20190828171055 (183.42.56.44) 1.73ms
+[D 17:11:18.872 NotebookApp] Path nbextensions_configurator/tree_tab/main.js served from /usr/lib/python3.6/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/tree_tab/main.js
+[D 17:11:18.872 NotebookApp] 200 GET /nbextensions/nbextensions_configurator/tree_tab/main.js?v=20190828171055 (183.42.56.44) 1.85ms
+[D 17:11:18.899 NotebookApp] 200 GET /api/contents/cookBook?type=directory&_=1566983478506 (183.42.56.44) 8.34ms
+[D 17:11:18.952 NotebookApp] Path nbextensions_configurator/main.js served from /usr/lib/python3.6/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/main.js
+[D 17:11:18.952 NotebookApp] 200 GET /nbextensions/nbextensions_configurator/main.js?v=20190828171055 (183.42.56.44) 1.75ms
+[D 17:11:18.954 NotebookApp] Path nbextensions_configurator/render/render.js served from /usr/lib/python3.6/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/render/render.js
+[D 17:11:18.955 NotebookApp] 200 GET /nbextensions/nbextensions_configurator/render/render.js?v=20190828171055 (183.42.56.44) 1.50ms
+[D 17:11:19.374 NotebookApp] Path base/js/security.js served from /usr/lib/python3.6/site-packages/notebook/static/base/js/security.js
+[D 17:11:19.374 NotebookApp] 200 GET /static/base/js/security.js?v=20190828171055 (183.42.56.44) 1.74ms
+[D 17:11:19.376 NotebookApp] Path notebook/js/mathjaxutils.js served from /usr/lib/python3.6/site-packages/notebook/static/notebook/js/mathjaxutils.js
+[D 17:11:19.376 NotebookApp] 200 GET /static/notebook/js/mathjaxutils.js?v=20190828171055 (183.42.56.44) 1.40ms
+[D 17:11:19.382 NotebookApp] Path components/codemirror/addon/runmode/runmode.js served from /usr/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/runmode/runmode.js
+[D 17:11:19.382 NotebookApp] 200 GET /static/components/codemirror/addon/runmode/runmode.js?v=20190828171055 (183.42.56.44) 1.31ms
+[D 17:11:19.384 NotebookApp] Path components/marked/lib/marked.js served from /usr/lib/python3.6/site-packages/notebook/static/components/marked/lib/marked.js
+[D 17:11:19.384 NotebookApp] 200 GET /static/components/marked/lib/marked.js?v=20190828171055 (183.42.56.44) 1.23ms
+[D 17:11:19.386 NotebookApp] Path notebook/js/codemirror-ipython.js served from /usr/lib/python3.6/site-packages/notebook/static/notebook/js/codemirror-ipython.js
+[D 17:11:19.386 NotebookApp] 200 GET /static/notebook/js/codemirror-ipython.js?v=20190828171055 (183.42.56.44) 1.03ms
+[D 17:11:19.390 NotebookApp] Path components/codemirror/mode/gfm/gfm.js served from /usr/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/gfm/gfm.js
+[D 17:11:19.391 NotebookApp] 200 GET /static/components/codemirror/mode/gfm/gfm.js?v=20190828171055 (183.42.56.44) 1.05ms
+[D 17:11:19.424 NotebookApp] Path notebook/js/codemirror-ipythongfm.js served from /usr/lib/python3.6/site-packages/notebook/static/notebook/js/codemirror-ipythongfm.js
+[D 17:11:19.424 NotebookApp] 200 GET /static/notebook/js/codemirror-ipythongfm.js?v=20190828171055 (183.42.56.44) 1.60ms
+[D 17:11:19.432 NotebookApp] Path notebook/js/quickhelp.js served from /usr/lib/python3.6/site-packages/notebook/static/notebook/js/quickhelp.js
+[D 17:11:19.433 NotebookApp] 200 GET /static/notebook/js/quickhelp.js?v=20190828171055 (183.42.56.44) 1.57ms
+[D 17:11:19.447 NotebookApp] Path nbextensions_configurator/kse_components.js served from /usr/lib/python3.6/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/kse_components.js
+[D 17:11:19.448 NotebookApp] 200 GET /nbextensions/nbextensions_configurator/kse_components.js?v=20190828171055 (183.42.56.44) 1.82ms
+[D 17:11:19.464 NotebookApp] Path components/jquery-ui/jquery-ui.min.js served from /usr/lib/python3.6/site-packages/notebook/static/components/jquery-ui/jquery-ui.min.js
+[D 17:11:19.483 NotebookApp] Path components/google-caja/html-css-sanitizer-minified.js served from /usr/lib/python3.6/site-packages/notebook/static/components/google-caja/html-css-sanitizer-minified.js
+[D 17:11:19.520 NotebookApp] Path components/codemirror/mode/python/python.js served from /usr/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/python/python.js
+[D 17:11:19.521 NotebookApp] 200 GET /static/components/codemirror/mode/python/python.js?v=20190828171055 (183.42.56.44) 1.81ms
+[D 17:11:19.531 NotebookApp] Path components/codemirror/addon/mode/overlay.js served from /usr/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/mode/overlay.js
+[D 17:11:19.532 NotebookApp] 200 GET /static/components/codemirror/addon/mode/overlay.js?v=20190828171055 (183.42.56.44) 1.61ms
+[D 17:11:19.533 NotebookApp] Path components/codemirror/mode/markdown/markdown.js served from /usr/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/markdown/markdown.js
+[D 17:11:19.534 NotebookApp] 200 GET /static/components/codemirror/mode/markdown/markdown.js?v=20190828171055 (183.42.56.44) 1.75ms
+[D 17:11:19.572 NotebookApp] Path components/codemirror/addon/mode/multiplex.js served from /usr/lib/python3.6/site-packages/notebook/static/components/codemirror/addon/mode/multiplex.js
+[D 17:11:19.573 NotebookApp] 200 GET /static/components/codemirror/addon/mode/multiplex.js?v=20190828171055 (183.42.56.44) 1.76ms
+[D 17:11:19.619 NotebookApp] Path components/codemirror/mode/stex/stex.js served from /usr/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/stex/stex.js
+[D 17:11:19.620 NotebookApp] 200 GET /static/components/codemirror/mode/stex/stex.js?v=20190828171055 (183.42.56.44) 1.56ms
+[D 17:11:20.016 NotebookApp] Path nbextensions_configurator/quickhelp_shim.js served from /usr/lib/python3.6/site-packages/jupyter_nbextensions_configurator/static/nbextensions_configurator/quickhelp_shim.js
+[D 17:11:20.017 NotebookApp] 200 GET /nbextensions/nbextensions_configurator/quickhelp_shim.js?v=20190828171055 (183.42.56.44) 1.95ms
+[D 17:11:20.762 NotebookApp] 200 GET /static/components/google-caja/html-css-sanitizer-minified.js?v=20190828171055 (183.42.56.44) 1279.58ms
+[D 17:11:21.332 NotebookApp] Path components/codemirror/mode/xml/xml.js served from /usr/lib/python3.6/site-packages/notebook/static/components/codemirror/mode/xml/xml.js
+[D 17:11:21.333 NotebookApp] 200 GET /static/components/codemirror/mode/xml/xml.js?v=20190828171055 (183.42.56.44) 1.62ms
+[D 17:11:22.083 NotebookApp] 200 GET /static/components/jquery-ui/jquery-ui.min.js?v=20190828171055 (183.42.56.44) 2619.65ms
+[I 17:11:22.508 NotebookApp] Creating new notebook in /cookBook
+[D 17:11:22.511 NotebookApp] Saving /home/notebook/cookBook/Untitled3.ipynb
+[D 17:11:22.534 NotebookApp] Running post-save hook on /home/notebook/cookBook/Untitled3.ipynb
