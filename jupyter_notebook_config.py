@@ -47,18 +47,24 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     try:
         subprocess.call("git add --all", shell=True)
         subprocess.call("git commit -m 'Jupyter notebook 更新'", shell=True) 
-        subprocess.call("git pull origin Algorithms", shell=True)   
+        subprocess.call("git pull origin  Algorithms", shell=True)   
         subprocess.call("git push origin Algorithms", shell=True)
         # subprocess.call("git checkout master", shell=True)
         # subprocess.call("git merge Algorithms master", shell=True)
         # subprocess.call("git push origin master", shell=True)
         # subprocess.call("git pull origin master", shell=True)
         
-        subprocess.call("git checkout Algorithms", shell=True)
+        subprocess.call("git checkout remotes/origin/Algorithms", shell=True)
     except:
         subprocess.call("git stash", shell=True)
     
-
+def script_pre_save(model, os_path, contents_manager, **kwargs):
+    try:
+        subprocess.call("git branch -a", shell=True)
+        subprocess.call("git checkout Algorithms", shell=True)
+        subprocess.call("git pull origin  Algorithms", shell=True)           
+    except:
+        subprocess.call("git stash", shell=True)
 
 
 ## This is an application.
@@ -316,7 +322,7 @@ c.NotebookApp.ip = '0.0.0.0'
 #c.NotebookApp.nbserver_extensions = {}
 
 ## The directory to use for notebooks and kernels.
-#c.NotebookApp.notebook_dir = ''
+c.NotebookApp.notebook_dir = '/home/notebook'
 
 ## Whether to open in a browser after starting. The specific browser used is
 #  platform dependent and determined by the python standard library `webbrowser`
@@ -713,7 +719,7 @@ c.NotebookApp.password = 'sha1:dcfd97bfcf5c:a2951f29f50b9e156b380af1c7866821362e
 #    Modifying this dict will affect the file that is stored.
 #  - path: the API path of the save destination
 #  - contents_manager: this ContentsManager instance
-#c.ContentsManager.pre_save_hook = None
+c.ContentsManager.pre_save_hook = script_pre_save
 
 ## 
 #c.ContentsManager.root_dir = '/'
