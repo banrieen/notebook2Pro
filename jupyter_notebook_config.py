@@ -784,7 +784,7 @@ c.ContentsManager.pre_save_hook = script_pre_save
 c.FileContentsManager.post_save_hook = script_post_save
 
 ## 
-#c.FileContentsManager.root_dir = 'home/notebook'
+c.FileContentsManager.root_dir = 'home/notebook'
 
 ## DEPRECATED, use post_save_hook. Will be removed in Notebook 5.0
 #c.FileContentsManager.save_script = False
