@@ -322,7 +322,7 @@ c.NotebookApp.ip = '0.0.0.0'
 # c.NotebookApp.nbserver_extensions = {}
 
 ## The directory to use for notebooks and kernels.
-# c.NotebookApp.notebook_dir = '/home/notebook'
+c.NotebookApp.notebook_dir = '/home/notebook'
 
 ## Whether to open in a browser after starting. The specific browser used is
 #  platform dependent and determined by the python standard library `webbrowser`
@@ -784,7 +784,7 @@ c.ContentsManager.pre_save_hook = script_pre_save
 c.FileContentsManager.post_save_hook = script_post_save
 
 ## 
-#c.FileContentsManager.root_dir = 'home/notebook'
+c.FileContentsManager.root_dir = 'home/notebook'
 
 ## DEPRECATED, use post_save_hook. Will be removed in Notebook 5.0
 #c.FileContentsManager.save_script = False
