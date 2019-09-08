@@ -15,13 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MasteringAlgorithmsWithC.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="BeautyOfPrograming.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="OpenJudge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MasteringAlgorithmsWithC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SortAndQuery.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,6 +33,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="OpenJudge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SortAndQuery.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
