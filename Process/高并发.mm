@@ -137,14 +137,14 @@
 </node>
 </node>
 </node>
-<node COLOR="#17a773" CREATED="1565908726463" ID="ID_360340462" MODIFIED="1567481884553" POSITION="left">
+<node COLOR="#17a773" CREATED="1565908726463" ID="ID_360340462" MODIFIED="1567908733605" POSITION="left">
 <richcontent TYPE="NODE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      Python Selector/Tornado
+      Python Selector
     </p>
     <ul>
       <li>
@@ -152,7 +152,8 @@
       </li>
     </ul>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <edge COLOR="#808080"/>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_360340462" ENDARROW="Default" ENDINCLINATION="38;27;" ID="Arrow_ID_1797922575" SOURCE="ID_887022510" STARTARROW="None" STARTINCLINATION="379;51;"/>
 <node COLOR="#00b439" CREATED="1565908741228" ID="ID_1363546504" MODIFIED="1566121040320" TEXT="&#x5728;Python 2.7/3.5&#x4e2d;&#x5f00;&#x59cb;&#x652f;&#x6301;">

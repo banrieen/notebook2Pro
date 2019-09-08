@@ -1,6 +1,21 @@
-ï»¿// HelloWorld.cpp : æ­¤æ–‡ä»¶åŒ…å« "main" å‡½æ•°ã€‚ç¨‹åºæ‰§è¡Œå°†åœ¨æ­¤å¤„å¼€å§‹å¹¶ç»“æŸã€‚
-//
+#include "SortAndQuery.h"
 
+
+
+SortAndQuery::SortAndQuery()
+{
+}
+
+
+SortAndQuery::~SortAndQuery()
+{
+}
+
+int SortAndQuery::QuickSort()
+{
+	return 0;
+}
+/*
 #include <iostream>
 #include "Calculator.h"
 using namespace std;
@@ -10,8 +25,8 @@ int main()
 	double x = 0.0;
 	double y = 0.0;
 	double result = 0.0;
-    char oper = '+';
-	cout << "è¾“å…¥è¦è®¡ç®—çš„æ•°å­—ï¼š " << endl;
+	char oper = '+';
+	cout << "ÊäÈëÒª¼ÆËãµÄÊı×Ö£º " << endl;
 	Calculator H;
 	while (true)
 	{
@@ -78,32 +93,32 @@ void quickSort(int s[], int l, int r)
 		int i = l, j = r, x = s[l];
 		while (i < j)
 		{
-			while (i < j && s[j] >= x) // ä»å³å‘å·¦æ‰¾ç¬¬ä¸€ä¸ªå°äºxçš„æ•°
+			while (i < j && s[j] >= x) // ´ÓÓÒÏò×óÕÒµÚÒ»¸öĞ¡ÓÚxµÄÊı
 				j--;
 			if (i < j)
 				s[i++] = s[j];
-			while (i < j && s[i] < x) // ä»å·¦å‘å³æ‰¾ç¬¬ä¸€ä¸ªå¤§äºç­‰äºxçš„æ•°
+			while (i < j && s[i] < x) // ´Ó×óÏòÓÒÕÒµÚÒ»¸ö´óÓÚµÈÓÚxµÄÊı
 				i++;
 			if (i < j)
 				s[j--] = s[i];
 		}
 		s[i] = x;
-		quickSort(s, l, i - 1); // é€’å½’è°ƒç”¨
+		quickSort(s, l, i - 1); // µİ¹éµ÷ÓÃ
 		quickSort(s, i + 1, r);
 	}
 }
-// è¿è¡Œç¨‹åº: Ctrl + F5 æˆ–è°ƒè¯• >â€œå¼€å§‹æ‰§è¡Œ(ä¸è°ƒè¯•)â€èœå•
-// è°ƒè¯•ç¨‹åº: F5 æˆ–è°ƒè¯• >â€œå¼€å§‹è°ƒè¯•â€èœå•
+// ÔËĞĞ³ÌĞò: Ctrl + F5 »òµ÷ÊÔ >¡°¿ªÊ¼Ö´ĞĞ(²»µ÷ÊÔ)¡±²Ëµ¥
+// µ÷ÊÔ³ÌĞò: F5 »òµ÷ÊÔ >¡°¿ªÊ¼µ÷ÊÔ¡±²Ëµ¥
 
 
 
 void merge(int a[], int low, int mid, int high) {
 	// subarray1 = a[low..mid], subarray2 = a[mid+1..high], both sorted
-	// å½’å¹¶æ’åº
+	// ¹é²¢ÅÅĞò
 	int N = high - low + 1;
-	int *b = new int[N]; // è®¨è®º: ä¸ºä»€ä¹ˆæˆ‘ä»¬éœ€è¦ä¸€ä¸ªä¸´æ—¶çš„æ•°ç»„ b?
+	int *b = new int[N]; // ÌÖÂÛ: ÎªÊ²Ã´ÎÒÃÇĞèÒªÒ»¸öÁÙÊ±µÄÊı×é b?
 	int left = low, right = mid + 1, bIdx = 0;
-	while (left <= mid && right <= high) // å½’å¹¶
+	while (left <= mid && right <= high) // ¹é²¢
 		b[bIdx++] = (a[left] <= a[right]) ? a[left++] : a[right++];
 	while (left <= mid) b[bIdx++] = a[left++]; // leftover, if any
 	while (right <= high) b[bIdx++] = a[right++]; // leftover, if any
@@ -111,13 +126,13 @@ void merge(int a[], int low, int mid, int high) {
 }
 
 void mergeSort(int a[], int low, int high) {
-	// è¦æ’åºçš„æ•°ç»„æ˜¯ a[low..high]
+	// ÒªÅÅĞòµÄÊı×éÊÇ a[low..high]
 	if (low < high) { // base case: low >= high (0 or 1 item)
 		int mid = (low + high) / 2;
-		mergeSort(a, low, mid); // åˆ†æˆä¸€åŠ
+		mergeSort(a, low, mid); // ·Ö³ÉÒ»°ë
 
-		mergeSort(a, mid + 1, high); // é€’å½’åœ°å°†å®ƒä»¬æ’åº
-		merge(a, low, mid, high); // è§£å†³: å½’å¹¶å­ç¨‹åº
+		mergeSort(a, mid + 1, high); // µİ¹éµØ½«ËüÃÇÅÅĞò
+		merge(a, low, mid, high); // ½â¾ö: ¹é²¢×Ó³ÌĞò
 	}
 }
 
@@ -145,5 +160,6 @@ void quick_sort(int array[], int low, int high)
 		quick_sort(array, low, m-1);
 		quick_sort(array, m+1, high);
 	}
-	
+
 }
+*/
