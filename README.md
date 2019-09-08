@@ -20,23 +20,24 @@
     ./DB Mysql,sqlitter,redis, postgresql, mongodb
     ./DesignPatterns 编程设计模式
     ./Draw 编程绘图
+    ./Distributed 分布式相关
     ./FrameworkServices Python Web框架
     ./Game 游戏
     ./GUI 图形开发
     ./LanguageSong 语言或语音处理
-    ./office 文档处理，包含VBA宏脚本
-    ./NetworkProtocal 网络协议TCP/UDP/HTTP/WEBSOCKETS
+    ./office 文档处理方法，包含VBA宏脚本
+    ./NetworkProtocal 网络协议TCP/UDP/HTTP/WEBSOCKETS对比
     ./PicturesVideo 图形和视频处理
     ./Process 进程线程，协程
     ./Spider 爬虫对比
-    ./SphinxServer Sphinx转换后的html文档
+    ./Sphinx Sphinx转换后的html文档
     ./System 系统操作
     ./VersionDevOps WEB部署CI/CD
     ./Jupyter_notebook_config.py notebook配置
-    ./VisualStudioCpp windows MinGW环境 汇总以C/C++的算法数据结构，包含算法导论在线实例等
-    ./Jupyter_notebook_systemd.service 在Centos
+    ./VisualStudioCpp (windows MinGW环境) 汇总以C/C++的算法数据结构，包含算法导论在线实例等
+    ./Jupyter_notebook_systemd.service 在Centosn nottebook 
 
-nottebook 文件库管理和发布
+文件库管理和发布
 ----------------------------------------------------        
 * Jupyter notebook： 同步到github; 
 
@@ -67,4 +68,8 @@ sphinx-build -b html sourcedir builddir
 
 ```
 
- *在Github.io 配置页面，不要使用 Jekyll theme。*
+*在Github.io 配置页面，不要使用 Jekyll theme。*
+
+* 相关主题会整理发布到CSDN Blog：https://blog.csdn.net/banrieen
+
+* Github.io 还在完善中。
