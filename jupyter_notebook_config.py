@@ -45,6 +45,7 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
         将本地分支合并到 master。
     """
     try:
+        subprocess.call("cd /home/notebook && git status", shell=True)
         subprocess.call("git add --all", shell=True)
         subprocess.call("git commit -m 'Jupyter notebook 更新'", shell=True) 
         subprocess.call("git pull origin  Algorithms", shell=True)   
@@ -60,6 +61,7 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     
 def script_pre_save(model, os_path, contents_manager, **kwargs):
     try:
+        subprocess.call("cd /home/notebook && git status", shell=True)
         subprocess.call("git branch -a", shell=True)
         subprocess.call("git checkout Algorithms", shell=True)
         subprocess.call("git pull origin  Algorithms", shell=True)           
