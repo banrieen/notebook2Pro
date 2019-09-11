@@ -23,8 +23,13 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     if _script_exporter is None:
         _script_exporter = ScriptExporter(parent=contents_manager)
     global _mk_exporter 
+<<<<<<< HEAD
     if _mk_exporter is None:
        _mk_exporter = MarkdownExporter(parent=contents_manager)
+=======
+    #if _mk_exporter is None:
+    #    _mk_exporter = MarkdownExporter(parent=contents_manager)
+>>>>>>> 5df5f7a67786e9e3ec2b968bca12fd181f1142c2
     log = contents_manager.log
     
     """ 要将指定codebook目录下的 .pynb .pdf 转换为 docs/_source/cookbook/*.rst 或 *.md
@@ -71,13 +76,13 @@ def script_pre_save(model, os_path, contents_manager, **kwargs):
 ## This is an application.
 
 ## The date format used by logging formatters for %(asctime)s
-#c.Application.log_datefmt = '%Y-%m-%d %H:%M:%S'
+## c.Application.log_datefmt = '%Y-%m-%d %H:%M:%S'
 
 ## The Logging format template
-#c.Application.log_format = '[%(name)s]%(highlevel)s %(message)s'
+## c.Application.log_format = '[%(name)s]%(highlevel)s %(message)s'
 
 ## Set the log level by value or name.
-#c.Application.log_level = 30
+## c.Application.log_level = 30
 
 #------------------------------------------------------------------------------
 # JupyterApp(Application) configuration
