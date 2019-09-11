@@ -49,12 +49,6 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
         subprocess.call("cd /home/notebook && git commit -m 'Jupyter notebook 更新'", shell=True) 
         subprocess.call("cd /home/notebook && git pull origin  Algorithms", shell=True)   
         subprocess.call("cd /home/notebook && git push origin Algorithms", shell=True)
-        # subprocess.call("git checkout master", shell=True)
-        # subprocess.call("git merge Algorithms master", shell=True)
-        # subprocess.call("git push origin master", shell=True)
-        # subprocess.call("git pull origin master", shell=True)
-        
-        subprocess.call("cd /home/notebook && git checkout remotes/origin/Algorithms", shell=True)
     except:
         subprocess.call("cd /home/notebook && git stash", shell=True)
     
@@ -62,7 +56,7 @@ def script_pre_save(model, os_path, contents_manager, **kwargs):
     try:
         subprocess.call("cd /home/notebook && git status", shell=True)
         subprocess.call("cd /home/notebook && git branch -a", shell=True)
-        subprocess.call("cd /home/notebook && git checkout Algorithms", shell=True)
+        # subprocess.call("cd /home/notebook && git checkout Algorithms", shell=True)
         subprocess.call("cd /home/notebook && git pull origin  Algorithms", shell=True)           
     except:
         subprocess.call("cd /home/notebook && git stash", shell=True)
