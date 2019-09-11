@@ -1,0 +1,18 @@
+[Unit]
+Description=Jupyter Notebook
+Requires=local-fs.target
+After=local-fs.target
+
+[Service]
+User=root
+# ExecStart=/usr/bin/bash -c "jupyter notebook  --allow-root  --ip=0.0.0.0 --port=8888  --notebook-dir=/home/notebook "
+ExecStart=/usr/bin/bash -c "jupyter notebook --config  /home/notebook/jupyter_notebook_config.py "
+
+# Type=simple
+# User=root
+# Group=root
+# WorkingDirectory=/home/notebook
+# Restart=always
+
+[Install]
+WantedBy=multi-user.target

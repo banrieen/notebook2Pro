@@ -9,7 +9,7 @@ import subprocess
 from notebook.utils import to_api_path
 
 _script_exporter = None
-
+_mk_exporter = None
 def script_post_save(model, os_path, contents_manager, **kwargs):
     """convert notebooks to markdown after save with nbconvert
     replaces `jupyter notebook --script`
@@ -18,15 +18,14 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     from nbconvert.exporters.markdown import MarkdownExporter
     if model['type'] != 'notebook':
         return
-
     global _script_exporter
-
     if _script_exporter is None:
         _script_exporter = ScriptExporter(parent=contents_manager)
-    #global _mk_exporter 
-    #if _mk_exporter is None:
-    #    _mk_exporter = MarkdownExporter(parent=contents_manager)
+    global _mk_exporter 
+    if _mk_exporter is None:
+       _mk_exporter = MarkdownExporter(parent=contents_manager)
     log = contents_manager.log
+    
     """ 要将指定codebook目录下的 .pynb .pdf 转换为 docs/_source/cookbook/*.rst 或 *.md
     # base, ext = os.path.splitext(os_path)
     # script, resources = _script_exporter.from_filename(os_path)
@@ -41,42 +40,43 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     #     f.write(script) """
     
     """ 提交 GitHub
-        将 notebook 提交 github 分支，
-        将本地分支合并到 master。
+        将 notebook 提交 github 分支 Algorithms。   
     """
     try:
-        subprocess.call("git add --all", shell=True)
-        subprocess.call("git commit -m 'Jupyter notebook 更新'", shell=True) 
-        subprocess.call("git pull origin  Algorithms", shell=True)   
-        subprocess.call("git push origin Algorithms", shell=True)
+        subprocess.call("cd /home/notebook && git status", shell=True)
+        subprocess.call("cd /home/notebook && git add --all", shell=True)
+        subprocess.call("cd /home/notebook && git commit -m 'Jupyter notebook 更新'", shell=True) 
+        subprocess.call("cd /home/notebook && git pull origin  Algorithms", shell=True)   
+        subprocess.call("cd /home/notebook && git push origin Algorithms", shell=True)
         # subprocess.call("git checkout master", shell=True)
         # subprocess.call("git merge Algorithms master", shell=True)
         # subprocess.call("git push origin master", shell=True)
         # subprocess.call("git pull origin master", shell=True)
         
-        subprocess.call("git checkout remotes/origin/Algorithms", shell=True)
+        subprocess.call("cd /home/notebook && git checkout remotes/origin/Algorithms", shell=True)
     except:
-        subprocess.call("git stash", shell=True)
+        subprocess.call("cd /home/notebook && git stash", shell=True)
     
 def script_pre_save(model, os_path, contents_manager, **kwargs):
     try:
-        subprocess.call("git branch -a", shell=True)
-        subprocess.call("git checkout Algorithms", shell=True)
-        subprocess.call("git pull origin  Algorithms", shell=True)           
+        subprocess.call("cd /home/notebook && git status", shell=True)
+        subprocess.call("cd /home/notebook && git branch -a", shell=True)
+        subprocess.call("cd /home/notebook && git checkout Algorithms", shell=True)
+        subprocess.call("cd /home/notebook && git pull origin  Algorithms", shell=True)           
     except:
-        subprocess.call("git stash", shell=True)
+        subprocess.call("cd /home/notebook && git stash", shell=True)
 
 
 ## This is an application.
 
 ## The date format used by logging formatters for %(asctime)s
-#c.Application.log_datefmt = '%Y-%m-%d %H:%M:%S'
+## c.Application.log_datefmt = '%Y-%m-%d %H:%M:%S'
 
 ## The Logging format template
-#c.Application.log_format = '[%(name)s]%(highlevel)s %(message)s'
+## c.Application.log_format = '[%(name)s]%(highlevel)s %(message)s'
 
 ## Set the log level by value or name.
-#c.Application.log_level = 30
+## c.Application.log_level = 30
 
 #------------------------------------------------------------------------------
 # JupyterApp(Application) configuration
@@ -322,7 +322,7 @@ c.NotebookApp.ip = '0.0.0.0'
 # c.NotebookApp.nbserver_extensions = {}
 
 ## The directory to use for notebooks and kernels.
-c.NotebookApp.notebook_dir = '/home/notebook'
+# c.NotebookApp.notebook_dir = '/home/notebook'
 
 ## Whether to open in a browser after starting. The specific browser used is
 #  platform dependent and determined by the python standard library `webbrowser`
@@ -784,7 +784,7 @@ c.ContentsManager.pre_save_hook = script_pre_save
 c.FileContentsManager.post_save_hook = script_post_save
 
 ## 
-#c.FileContentsManager.root_dir = 'home/notebook'
+c.FileContentsManager.root_dir = 'home/notebook'
 
 ## DEPRECATED, use post_save_hook. Will be removed in Notebook 5.0
 #c.FileContentsManager.save_script = False

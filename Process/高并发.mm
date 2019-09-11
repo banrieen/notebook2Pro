@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node COLOR="#000000" CREATED="1565769068102" ID="ID_514523847" MODIFIED="1566121040135" TEXT="&#x9ad8;&#x5e76;&#x53d1;">
 <edge COLOR="#666666" WIDTH="4"/>
-<node COLOR="#17a773" CREATED="1565754835704" ID="ID_382578890" MODIFIED="1566121040137" POSITION="right" TEXT="&#x9ad8;&#x5e76;&#x53d1;">
+<node COLOR="#17a773" CREATED="1565754835704" ID="ID_382578890" MODIFIED="1567481670613" POSITION="right" TEXT="&#x751f;&#x4ea7;&#x73af;&#x5883;">
 <edge COLOR="#808080"/>
 <node COLOR="#00b439" CREATED="1565755446048" ID="ID_284046622" MODIFIED="1566121040139" TEXT="&#x57fa;&#x672c;&#x65b9;&#x6cd5;">
 <edge COLOR="#00b439" WIDTH="2"/>
@@ -49,7 +49,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1565756619735" ID="ID_1825236600" MODIFIED="1566121040248" TEXT="&#x90e8;&#x7f72;&#x65b9;&#x9762;">
+<node COLOR="#00b439" CREATED="1565756619735" ID="ID_1825236600" MODIFIED="1567481641523" TEXT="&#x4f18;&#x5316;&#x65b9;&#x9762;">
 <edge COLOR="#00b439" WIDTH="2"/>
 <node COLOR="#990000" CREATED="1565756625882" ID="ID_802078080" MODIFIED="1566121040265" TEXT="Nginx&#x8981;&#x505a;&#x8d1f;&#x8f7d;&#x5747;&#x8861;">
 <edge COLOR="#990000" WIDTH="1"/>
@@ -64,8 +64,9 @@
 <edge COLOR="#990000" WIDTH="1"/>
 </node>
 </node>
-<node COLOR="#00b439" CREATED="1565755466093" ID="ID_1008345671" MODIFIED="1566121040273" TEXT="python&#x5904;&#x7406;&#x9ad8;&#x5e76;&#x53d1;">
+<node COLOR="#00b439" CREATED="1565755466093" ID="ID_1008345671" MODIFIED="1567481959622" TEXT="python&#x5904;&#x7406;&#x9ad8;&#x5e76;&#x53d1;">
 <edge COLOR="#00b439" WIDTH="2"/>
+<arrowlink DESTINATION="ID_1811565955" ENDARROW="Default" ENDINCLINATION="245;0;" ID="Arrow_ID_1421244754" STARTARROW="None" STARTINCLINATION="0;19;"/>
 <node COLOR="#990000" CREATED="1565755480181" ID="ID_686021464" MODIFIED="1566121040274" TEXT="&#x534f;&#x7a0b;&#xff0c;&#x4e8b;&#x4ef6;&#x5faa;&#x73af;&#xff0c;&#x9ad8;&#x6548;IO&#x6a21;&#x578b;">
 <edge COLOR="#990000" WIDTH="1"/>
 </node>
@@ -106,8 +107,9 @@
 <edge COLOR="#111111" WIDTH="thin"/>
 </node>
 </node>
-<node COLOR="#990000" CREATED="1565755728834" ID="ID_887022510" MODIFIED="1566121040292" TEXT="&#x591a;&#x8def;&#x590d;&#x7528;IO">
+<node COLOR="#990000" CREATED="1565755728834" ID="ID_887022510" MODIFIED="1567481884553" TEXT="&#x591a;&#x8def;&#x590d;&#x7528;IO">
 <edge COLOR="#990000" WIDTH="1"/>
+<arrowlink DESTINATION="ID_360340462" ENDARROW="Default" ENDINCLINATION="38;27;" ID="Arrow_ID_1797922575" STARTARROW="None" STARTINCLINATION="379;51;"/>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node COLOR="#111111" CREATED="1565755775188" ID="ID_566816831" MODIFIED="1565928120605" TEXT="select">
 <edge COLOR="#111111" WIDTH="thin"/>
@@ -135,14 +137,14 @@
 </node>
 </node>
 </node>
-<node COLOR="#17a773" CREATED="1565908726463" ID="ID_360340462" MODIFIED="1566121040319" POSITION="left">
+<node COLOR="#17a773" CREATED="1565908726463" ID="ID_360340462" MODIFIED="1567908733605" POSITION="left">
 <richcontent TYPE="NODE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      Python Selector/Tornado
+      Python Selector
     </p>
     <ul>
       <li>
@@ -153,6 +155,7 @@
 </html>
 </richcontent>
 <edge COLOR="#808080"/>
+<linktarget COLOR="#b0b0b0" DESTINATION="ID_360340462" ENDARROW="Default" ENDINCLINATION="38;27;" ID="Arrow_ID_1797922575" SOURCE="ID_887022510" STARTARROW="None" STARTINCLINATION="379;51;"/>
 <node COLOR="#00b439" CREATED="1565908741228" ID="ID_1363546504" MODIFIED="1566121040320" TEXT="&#x5728;Python 2.7/3.5&#x4e2d;&#x5f00;&#x59cb;&#x652f;&#x6301;">
 <edge COLOR="#00b439" WIDTH="2"/>
 </node>
@@ -169,8 +172,7 @@
       Salaries &#21450;&#20854;&#34893;&#29983;&#31995;&#32479;&#20013;&#20351;&#29992;<b>devpol()</b>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge COLOR="#00b439" WIDTH="2"/>
 </node>
 <node COLOR="#00b439" CREATED="1565908922631" ID="ID_539102892" MODIFIED="1566121040350">
@@ -183,8 +185,7 @@
       linux &#20869;&#26680;2.5&#20197;&#19978;&#20351;&#29992; <b>epoll()</b>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge COLOR="#00b439" WIDTH="2"/>
 <font NAME="SansSerif" SIZE="12"/>
 </node>
@@ -198,8 +199,7 @@
       &#22823;&#22810;&#26159;BSD&#31995;&#32479;&#20351;&#29992;&#160;<b>kqueue()</b>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge COLOR="#00b439" WIDTH="2"/>
 </node>
 <node COLOR="#00b439" CREATED="1565909271412" ID="ID_1733158014" MODIFIED="1566121040354" TEXT="&#x5728; windows &#x4e0b;&#x4ec5;&#x652f;&#x6301; sockets">
@@ -237,8 +237,7 @@
       </li>
     </ul>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge COLOR="#990000" WIDTH="1"/>
 </node>
 </node>
@@ -249,9 +248,10 @@
 <edge COLOR="#00b439" WIDTH="2"/>
 </node>
 </node>
-<node COLOR="#17a773" CREATED="1565928126267" ID="ID_1811565955" MODIFIED="1566121040393" POSITION="right" TEXT="&#x8fdb;&#x7a0b;&#x3001;&#x7ebf;&#x7a0b;&#x3001;&#x534f;&#x7a0b;">
+<node COLOR="#17a773" CREATED="1565928126267" ID="ID_1811565955" MODIFIED="1567481959622" POSITION="right" TEXT="&#x8fdb;&#x7a0b;&#x3001;&#x7ebf;&#x7a0b;&#x3001;&#x534f;&#x7a0b;">
 <edge COLOR="#808080"/>
-<node CREATED="1566140979943" ID="ID_1023242192" MODIFIED="1566142181280">
+<linktarget COLOR="#b0b0b0" DESTINATION="ID_1811565955" ENDARROW="Default" ENDINCLINATION="245;0;" ID="Arrow_ID_1421244754" SOURCE="ID_1008345671" STARTARROW="None" STARTINCLINATION="0;19;"/>
+<node CREATED="1566140979943" HGAP="139" ID="ID_1023242192" MODIFIED="1567481946750" VSHIFT="-16">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -296,8 +296,7 @@
       2&#65289;&#36827;&#34892;&#38459;&#22622;&#65288;Blocking&#65289;&#25805;&#20316;&#65288;&#22914;IO&#26102;&#65289;&#20250;&#38459;&#22622;&#25481;&#25972;&#20010;&#31243;&#24207;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node COLOR="#00b439" CREATED="1565928401257" ID="ID_1691199949" MODIFIED="1566121040395" TEXT="&#x534f;&#x7a0b;">
 <edge COLOR="#00b439" WIDTH="2"/>
@@ -327,8 +326,7 @@
       &#25512;&#33616;Threading&#65292;&#36991;&#20813;&#20351;&#29992;thread&#65288;<b>&#32570;&#23569;&#21516;&#27493;&#21407;&#35821;</b>&#65292;<b>&#23545;&#20110;&#36827;&#31243;&#21512;&#36866;&#36864;&#20986;&#27809;&#26377;&#25511;&#21046;</b>&#65292;&#31435;&#21051;&#25191;&#34892;&#65292;&#24378;&#21046;<b>&#32467;&#26463;&#21518;&#27809;&#26377;&#20219;&#20309;&#28165;&#29702;&#24037;&#20316;</b>&#65292;&#20063;<b>&#19981;&#25903;&#25345;&#23432;&#25252;&#32447;&#31243;</b>&#65289;
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge COLOR="#990000" WIDTH="1"/>
 </node>
 </node>
