@@ -20,13 +20,18 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
         return
 
     global _script_exporter
-
     if _script_exporter is None:
         _script_exporter = ScriptExporter(parent=contents_manager)
     global _mk_exporter 
+<<<<<<< HEAD
+    if _mk_exporter is None:
+       _mk_exporter = MarkdownExporter(parent=contents_manager)
+=======
     #if _mk_exporter is None:
     #    _mk_exporter = MarkdownExporter(parent=contents_manager)
+>>>>>>> 5df5f7a67786e9e3ec2b968bca12fd181f1142c2
     log = contents_manager.log
+    
     """ 要将指定codebook目录下的 .pynb .pdf 转换为 docs/_source/cookbook/*.rst 或 *.md
     # base, ext = os.path.splitext(os_path)
     # script, resources = _script_exporter.from_filename(os_path)
@@ -41,32 +46,31 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     #     f.write(script) """
     
     """ 提交 GitHub
-        将 notebook 提交 github 分支，
-        将本地分支合并到 master。
+        将 notebook 提交 github 分支 Algorithms。   
     """
     try:
         subprocess.call("cd /home/notebook && git status", shell=True)
-        subprocess.call("git add --all", shell=True)
-        subprocess.call("git commit -m 'Jupyter notebook 更新'", shell=True) 
-        subprocess.call("git pull origin  Algorithms", shell=True)   
-        subprocess.call("git push origin Algorithms", shell=True)
+        subprocess.call("cd /home/notebook && git add --all", shell=True)
+        subprocess.call("cd /home/notebook && git commit -m 'Jupyter notebook 更新'", shell=True) 
+        subprocess.call("cd /home/notebook && git pull origin  Algorithms", shell=True)   
+        subprocess.call("cd /home/notebook && git push origin Algorithms", shell=True)
         # subprocess.call("git checkout master", shell=True)
         # subprocess.call("git merge Algorithms master", shell=True)
         # subprocess.call("git push origin master", shell=True)
         # subprocess.call("git pull origin master", shell=True)
         
-        subprocess.call("git checkout remotes/origin/Algorithms", shell=True)
+        subprocess.call("cd /home/notebook && git checkout remotes/origin/Algorithms", shell=True)
     except:
-        subprocess.call("git stash", shell=True)
+        subprocess.call("cd /home/notebook && git stash", shell=True)
     
 def script_pre_save(model, os_path, contents_manager, **kwargs):
     try:
         subprocess.call("cd /home/notebook && git status", shell=True)
-        subprocess.call("git branch -a", shell=True)
-        subprocess.call("git checkout Algorithms", shell=True)
-        subprocess.call("git pull origin  Algorithms", shell=True)           
+        subprocess.call("cd /home/notebook && git branch -a", shell=True)
+        subprocess.call("cd /home/notebook && git checkout Algorithms", shell=True)
+        subprocess.call("cd /home/notebook && git pull origin  Algorithms", shell=True)           
     except:
-        subprocess.call("git stash", shell=True)
+        subprocess.call("cd /home/notebook && git stash", shell=True)
 
 
 ## This is an application.
