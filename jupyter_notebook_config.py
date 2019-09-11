@@ -18,18 +18,12 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     from nbconvert.exporters.markdown import MarkdownExporter
     if model['type'] != 'notebook':
         return
-
     global _script_exporter
     if _script_exporter is None:
         _script_exporter = ScriptExporter(parent=contents_manager)
     global _mk_exporter 
-<<<<<<< HEAD
     if _mk_exporter is None:
        _mk_exporter = MarkdownExporter(parent=contents_manager)
-=======
-    #if _mk_exporter is None:
-    #    _mk_exporter = MarkdownExporter(parent=contents_manager)
->>>>>>> 5df5f7a67786e9e3ec2b968bca12fd181f1142c2
     log = contents_manager.log
     
     """ 要将指定codebook目录下的 .pynb .pdf 转换为 docs/_source/cookbook/*.rst 或 *.md
