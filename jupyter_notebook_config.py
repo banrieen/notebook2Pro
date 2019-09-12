@@ -44,9 +44,11 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
         将 notebook 提交 github 分支 Algorithms。   
     """
     try:
-        subprocess.call("cd /home/notebook && git status", shell=True)
+        outs = subprocess.Popen("cd /home/notebook && git status", stdout=subprocess.PIPE, shell=True)
+        commit_des = outs.communicate()
+        commit_des = commit_des[0].decode('UTF-8').split("\n")[-4].replace("#\t","")
         subprocess.call("cd /home/notebook && git add --all", shell=True)
-        subprocess.call("cd /home/notebook && git commit -m 'Jupyter notebook 更新'", shell=True) 
+        subprocess.call(f"cd /home/notebook && git commit -m '{commit_des}'", shell=True) 
         subprocess.call("cd /home/notebook && git pull origin  Algorithms", shell=True)   
         subprocess.call("cd /home/notebook && git push origin Algorithms", shell=True)
     except:
