@@ -8,14 +8,13 @@
 目录描述：
 ------------------------------------
     ./AI AI算法和框架
-    ./Algorithms 数据结构和算法教程代码目录，对比整理。
-    ./CallAnother 不同编程语言接口调用，如python <=> C
-    ./Configuration 项目配置如 Yaml, json, config file等
+    ./Algorithms 数据结构和算法教程代码目录，归纳总结。
     ./CookBook jupyter notebooks  案例集锦，面试相关问题(按照 leetcode题型做了基本分类还包含 CoderByte，Kaggle 等)
-        ./Algiorithms 案例集锦，面试相关算法题
+        ./LeetCode 案例集锦，面试相关算法题
         ./Scripts bash脚本（awk,sed,grep）
         ./SQL SQL优化
         ./MultProcess 线程进程问题
+        ./Configuration 项目配置如 Yaml, json, config file等
     ./DataAnalysis 数据处理和分析，大数据
     ./DB Mysql,sqlitter,redis, postgresql, mongodb
     ./DesignPatterns 编程设计模式
