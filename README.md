@@ -94,5 +94,4 @@ sphinx-build -b html sourcedir builddir
 *在Github.io 配置页面，不要使用 Jekyll theme。*
 
 * 相关主题会整理发布到CSDN Blog：https://blog.csdn.net/banrieen
-
 * Github.io 还在完善中。
