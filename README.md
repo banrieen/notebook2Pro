@@ -25,16 +25,17 @@
     ./Game 游戏
     ./GUI 图形开发
     ./LanguageSong 语言或语音处理
-    ./office 文档处理方法，包含VBA宏脚本
+    ./MicrosoftOffice 文档处理方法，包含VBA宏脚本
     ./NetworkProtocal 网络协议TCP/UDP/HTTP/WEBSOCKETS对比
     ./PicturesVideo 图形和视频处理
-    ./Process 进程线程，协程
+    ./MultiProcess 进程线程，协程
     ./Spider 爬虫对比
     ./Sphinx Sphinx转换后的html文档
     ./System 系统操作
     ./VersionDevOps WEB部署CI/CD
     ./Jupyter_notebook_config.py notebook配置
     ./VisualStudioCpp (windows MinGW环境) 汇总以C/C++的算法数据结构，包含算法导论在线实例等
+    ./XcodeCpp (Mac OS Gnu环境) 汇总以C/C++的算法数据结构，包含算法导论在线实例等
     ./Jupyter_notebook_systemd.service 在Centosn nottebook 
 
 文件库管理和发布
