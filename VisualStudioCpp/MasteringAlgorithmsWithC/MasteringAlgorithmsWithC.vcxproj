@@ -22,9 +22,9 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{24CA1E43-CE5C-4EEB-B6BF-309C4A4599E5}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>MasteringAlgorithmsWithC</RootNamespace>
+    <RootNamespace>BeautyOfPrograming</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>MasteringAlgorithms</ProjectName>
+    <ProjectName>BeautyOfPrograming</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
