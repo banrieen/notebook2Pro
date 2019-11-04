@@ -15,27 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BeautyOfPrograming.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="OpenJudge.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="MasteringAlgorithmsWithC.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="SortAndQuery.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="stack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CpuUsage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BeautyOfPrograming.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="OpenJudge.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="SortAndQuery.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CpuUsage.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

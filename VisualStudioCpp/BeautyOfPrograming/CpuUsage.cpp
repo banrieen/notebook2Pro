@@ -1,4 +1,4 @@
-#include "BeautyOfPrograming.h"
+#include "CpuUsage.h"
 #include <iostream>
 #include <windows.h>
 #include <stdlib.h>
