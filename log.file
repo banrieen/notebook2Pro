@@ -1,0 +1,29 @@
+[master 6fe74da] Jupyter notebook 更新
+ 2 files changed, 6 insertions(+), 3649 deletions(-)
+ create mode 100644 cookBook/Untitled2.ipynb
+ rewrite log.file (100%)
+Already up-to-date.
+M	log.file
+Your branch is ahead of 'origin/master' by 17 commits.
+  (use "git push" to publish your local commits)
+Already up-to-date.
+[master eae9eb3] Jupyter notebook 更新
+ 2 files changed, 37 insertions(+), 2 deletions(-)
+Already up-to-date.
+M	log.file
+Your branch is ahead of 'origin/master' by 18 commits.
+  (use "git push" to publish your local commits)
+Already up-to-date.
+[master 35da8a0] Jupyter notebook 更新
+ 2 files changed, 13 insertions(+)
+ create mode 100644 cookBook/Untitled4.ipynb
+Already up-to-date.
+M	log.file
+Your branch is ahead of 'origin/master' by 19 commits.
+  (use "git push" to publish your local commits)
+Already up-to-date.
+Serving notebooks from local directory: /home/notebook
+1 active kernel
+The Jupyter Notebook is running at:
+http://(izwz90ajic0vbw7o4pj6xyz or 127.0.0.1):8888/
+Shutdown this notebook server (y/[n])? 
