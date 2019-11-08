@@ -17,11 +17,11 @@
         ./SQL SQL优化
         ./MultProcess 线程进程问题
     ./DataAnalysis 数据处理和分析，大数据
-    ./DB Mysql,sqlitter,redis, postgresql, mongodb
-    ./DesignPatterns 编程设计模式
-    ./Draw 编程绘图
+    ./DB  Mysql,sqlitter,redis, postgresql, mongodb数据库
+    ./DesignPatterns  设计模式
+    ./Draw  绘图
     ./Distributed 分布式相关
-    ./FrameworkServices Python Web框架
+    ./FrameworkServices  Web框架
     ./Game 游戏
     ./GUI 图形开发
     ./LanguageSong 语言或语音处理
