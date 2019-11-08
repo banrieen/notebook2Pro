@@ -38,16 +38,18 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     # log.info("Saving markdown /%s", to_api_path(script_fname, contents_manager.root_dir))
     # breakpoint()
     # with io.open(script_fname, 'w', encoding='utf-8') as f:
-    #     f.write(script) """
+    #     f.write(script) 
+    """
     
     """ 提交 GitHub
-        将 notebook 提交 github 分支 Algorithms。   
+    # 将 notebook 提交 github 分支 Algorithms。   
     """
     BookDir = os.path.dirname(os.path.realpath(__file__))
     try:
         outs = subprocess.Popen(f"cd {BookDir} && git status", stdout=subprocess.PIPE, shell=True)
         commit_des = outs.communicate()
-        commit_des = commit_des[0].decode('UTF-8').split("\n")[-4].replace("#\t","")
+        commit_des = commit_des[0].decode('UTF-8').split("\n")[-4]
+        commit_des = ",".join([des.replace("\t","") for des in commit_des if des.strip()])
         subprocess.call(f"cd {BookDir} && git add --all", shell=True)
         subprocess.call(f"cd {BookDir} && git commit -m '{commit_des}'", shell=True)
         subprocess.call(f"cd {BookDir} && git pull origin  Algorithms", shell=True)
@@ -56,7 +58,7 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
         subprocess.call(f"cd {BookDir} && git stash", shell=True)
     
 def script_pre_save(model, os_path, contents_manager, **kwargs):
-    BookDir = os.path.dirname(__file__)
+    BookDir = os.path.dirname(os.path.realpath(__file__))
     try:
         subprocess.call(f"cd {BookDir} && git status", shell=True)
         subprocess.call(f"cd {BookDir} && git branch -a", shell=True)

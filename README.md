@@ -10,7 +10,7 @@
     ./AI AI算法和框架
     ./Algorithms 数据结构和算法教程代码目录，对比整理。
     ./CallAnother 不同编程语言接口调用，如python <=> C
-    ./Configuration 配置管理如 Yaml, json, config file等
+    ./Configuration 配置管理如 Yaml, json, configration files等
     ./CookBook jupyter notebooks  案例集锦，面试相关问题(按照 leetcode题型做了基本分类还包含 CoderByte，Kaggle 等)
         ./Algiorithms 案例集锦，面试相关算法题
         ./Scripts bash脚本（awk,sed,grep）
