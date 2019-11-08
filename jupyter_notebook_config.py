@@ -27,7 +27,7 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
        _mk_exporter = MarkdownExporter(parent=contents_manager)
     log = contents_manager.log
     
-    """ 要将指定codebook目录下的 .pynb .pdf 转换为 docs/_source/cookbook/*.rst 或 *.md
+    """ 将指定codebook目录下的 .pynb .pdf 转换为 docs/_source/cookbook/*.rst 或 *.md
     # base, ext = os.path.splitext(os_path)
     # script, resources = _script_exporter.from_filename(os_path)
     # script_fname = base + resources.get('output_extension', '.txt')
@@ -48,8 +48,9 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     try:
         outs = subprocess.Popen(f"cd {BookDir} && git status", stdout=subprocess.PIPE, shell=True)
         commit_des = outs.communicate()
-        commit_des = commit_des[0].decode('UTF-8').split("\n")[-4]
+        commit_des = commit_des[0].decode('UTF-8').split("\n")[4:]
         commit_des = ",".join([des.replace("\t","") for des in commit_des if des.strip()])
+        log.info(f"commit_des")
         subprocess.call(f"cd {BookDir} && git add --all", shell=True)
         subprocess.call(f"cd {BookDir} && git commit -m '{commit_des}'", shell=True)
         subprocess.call(f"cd {BookDir} && git pull origin  Algorithms", shell=True)
