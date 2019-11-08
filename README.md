@@ -16,7 +16,7 @@
         ./Scripts bash脚本（awk,sed,grep）
         ./SQL SQL优化
         ./MultProcess 线程进程问题
-    ./DataAnalysis 数据处理和分析，大数据
+    ./DataAnalysis 数据处理和分析
     ./DB  Mysql,sqlitter,redis, postgresql, mongodb数据库
     ./DesignPatterns  设计模式
     ./Draw  绘图
