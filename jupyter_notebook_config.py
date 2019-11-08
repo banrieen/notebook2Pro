@@ -10,6 +10,8 @@ from notebook.utils import to_api_path
 
 _script_exporter = None
 _mk_exporter = None
+## Set sysnc git branch
+GITBRANCH = "Algorithms"
 def script_post_save(model, os_path, contents_manager, **kwargs):
     """convert notebooks to markdown after save with nbconvert
     replaces `jupyter notebook --script`
@@ -21,7 +23,8 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     global _script_exporter
     if _script_exporter is None:
         _script_exporter = ScriptExporter(parent=contents_manager)
-    global _mk_exporter 
+    global _mk_exporter
+    global GITBRANCH
 
     if _mk_exporter is None:
        _mk_exporter = MarkdownExporter(parent=contents_manager)
@@ -53,17 +56,18 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
         log.info(f"commit_des")
         subprocess.call(f"cd {BookDir} && git add --all", shell=True)
         subprocess.call(f"cd {BookDir} && git commit -m '{commit_des}'", shell=True)
-        subprocess.call(f"cd {BookDir} && git pull origin  Algorithms", shell=True)
-        subprocess.call(f"cd {BookDir} && git push origin Algorithms", shell=True)
+        subprocess.call(f"cd {BookDir} && git pull origin  {GITBRANCH}", shell=True)
+        subprocess.call(f"cd {BookDir} && git push origin {GITBRANCH}", shell=True)
     except:
         subprocess.call(f"cd {BookDir} && git stash", shell=True)
     
 def script_pre_save(model, os_path, contents_manager, **kwargs):
     BookDir = os.path.dirname(os.path.realpath(__file__))
+    global GITBRANCH
     try:
         subprocess.call(f"cd {BookDir} && git status", shell=True)
         subprocess.call(f"cd {BookDir} && git branch -a", shell=True)
-        subprocess.call(f"cd {BookDir} && git pull origin  Algorithms", shell=True)
+        subprocess.call(f"cd {BookDir} && git pull origin  {GITBRANCH}", shell=True)
     except:
         subprocess.call(f"cd {BookDir} && git stash", shell=True)
 
