@@ -43,7 +43,7 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     """ 提交 GitHub
         将 notebook 提交 github 分支 Algorithms。   
     """
-    BookDir = os.path.dirname(__file__)
+    BookDir = os.path.dirname(os.path.realpath(__file__))
     try:
         outs = subprocess.Popen(f"cd {BookDir} && git status", stdout=subprocess.PIPE, shell=True)
         commit_des = outs.communicate()
