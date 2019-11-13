@@ -71,7 +71,7 @@ systemctl start jupyter
   *不同系统下 bash 所在路径可能不同，以及登录用户可能不同，需要记得更新！*
 
 * sphinx 转换为静态HTML，链接到个人主页 github.io:
-  这个原本是便于展示，尤其是一些 pdf，文本。
+  这个原本是便于展示，尤其是一些 pdf，文本。现在主要是将 ipynb 转换为 web 文档。
 
 ```
 # On Linux or MacOS, you should open your terminal and run the following command.
