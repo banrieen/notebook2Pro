@@ -53,7 +53,6 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
         commit_des = outs.communicate()
         commit_des = commit_des[0].decode('UTF-8').split("\n")[4:]
         commit_des = ",".join([des.replace("\t","") for des in commit_des if des.strip()])
-        log.info(f"commit_des")
         subprocess.call(f"cd {BookDir} && git add --all", shell=True)
         subprocess.call(f"cd {BookDir} && git commit -m '{commit_des}'", shell=True)
         subprocess.call(f"cd {BookDir} && git pull origin  {GITBRANCH}", shell=True)
@@ -344,7 +343,7 @@ c.NotebookApp.open_browser = False
 #  
 #  The string should be of the form type:salt:hashed-password.
 #c.NotebookApp.password = ''
-c.NotebookApp.password = 'sha1:dcfd97bfcf5c:a2951f29f50b9e156b380af1c7866821362ebce0'
+c.NotebookApp.password = 'sha1:ac8da795d623:95e23ac3de76abee504405f23efe9cdce9df3025'
 
 ## Forces users to use a password for the Notebook server. This is useful in a
 #  multi user environment, for instance when everybody in the LAN can access each
