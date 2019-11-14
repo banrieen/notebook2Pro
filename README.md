@@ -8,33 +8,35 @@
 目录描述：
 ------------------------------------
     ./AI AI算法和框架
-    ./Algorithms 数据结构和算法教程代码目录，归纳总结。
+    ./Algorithms 数据结构和算法教程代码目录，对比整理。
+    ./CallAnother 不同编程语言接口调用，如python <=> C
+    ./Configuration 配置管理如 Yaml, json, configration files等
     ./CookBook jupyter notebooks  案例集锦，面试相关问题(按照 leetcode题型做了基本分类还包含 CoderByte，Kaggle 等)
-        ./LeetCode 案例集锦，面试相关算法题
+        ./Algiorithms 案例集锦，面试相关算法题
         ./Scripts bash脚本（awk,sed,grep）
         ./SQL SQL优化
         ./MultProcess 线程进程问题
-        ./Configuration 项目配置如 Yaml, json, config file等
-    ./DataAnalysis 数据处理和分析，大数据
-    ./DB Mysql,sqlitter,redis, postgresql, mongodb
-    ./DesignPatterns 编程设计模式
-    ./Draw 编程绘图
+    ./DataAnalysis 数据处理和分析
+    ./DB  Mysql,sqlitter,redis, postgresql, mongodb数据库
+    ./DesignPatterns  设计模式
+    ./Draw  绘图
     ./Distributed 分布式相关
-    ./FrameworkServices Python Web框架
+    ./FrameworkServices  Web框架
     ./Game 游戏
     ./GUI 图形开发
     ./LanguageSong 语言或语音处理
-    ./office 文档处理方法，包含VBA宏脚本
+    ./MicrosoftOffice 文档处理方法，包含VBA宏脚本
     ./NetworkProtocal 网络协议TCP/UDP/HTTP/WEBSOCKETS对比
     ./PicturesVideo 图形和视频处理
-    ./Process 进程线程，协程
+    ./MultiProcess 进程线程，协程
     ./Spider 爬虫对比
     ./Sphinx Sphinx转换后的html文档
     ./System 系统操作
     ./VersionDevOps WEB部署CI/CD
     ./Jupyter_notebook_config.py notebook配置
     ./VisualStudioCpp (windows MinGW环境) 汇总以C/C++的算法数据结构，包含算法导论在线实例等
-    ./Jupyter_notebook_systemd.service 在Centosn nottebook 
+    ./XcodeCpp (Mac OS Gnu环境) 汇总以C/C++的算法数据结构，包含算法导论在线实例等
+    ./Jupyter_notebook_systemd.service 操作系统下使用 systemctl 管理服务  
 
 文件库管理和发布
 ----------------------------------------------------        
@@ -66,8 +68,10 @@ cp -f ./jupyter_notebook_systemd.service /etc/systemd/system/jupyter.service
 systemctl start jupyter 
 
 ```
+  *不同系统下 bash 所在路径可能不同，以及登录用户可能不同，需要记得更新！*
 
 * sphinx 转换为静态HTML，链接到个人主页 github.io:
+  这个原本是便于展示，尤其是一些 pdf，文本。现在主要是将 ipynb 转换为 web 文档。
 
 ```
 # On Linux or MacOS, you should open your terminal and run the following command.
@@ -92,5 +96,4 @@ sphinx-build -b html sourcedir builddir
 *在Github.io 配置页面，不要使用 Jekyll theme。*
 
 * 相关主题会整理发布到CSDN Blog：https://blog.csdn.net/banrieen
-
 * Github.io 还在完善中。

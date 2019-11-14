@@ -152,15 +152,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BeautyOfPrograming.cpp" />
-    <ClCompile Include="MasteringAlgorithmsWithC.cpp" />
+    <ClCompile Include="CpuUsage.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="OpenJudge.cpp" />
     <ClCompile Include="SortAndQuery.cpp" />
+    <ClCompile Include="stack.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BeautyOfPrograming.h" />
+    <ClInclude Include="CpuUsage.h" />
     <ClInclude Include="OpenJudge.h" />
     <ClInclude Include="SortAndQuery.h" />
+    <ClInclude Include="stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

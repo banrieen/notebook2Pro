@@ -10,6 +10,8 @@ from notebook.utils import to_api_path
 
 _script_exporter = None
 _mk_exporter = None
+## Set sysnc git branch
+GITBRANCH = "Algorithms"
 def script_post_save(model, os_path, contents_manager, **kwargs):
     """convert notebooks to markdown after save with nbconvert
     replaces `jupyter notebook --script`
@@ -21,13 +23,14 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     global _script_exporter
     if _script_exporter is None:
         _script_exporter = ScriptExporter(parent=contents_manager)
-    global _mk_exporter 
+    global _mk_exporter
+    global GITBRANCH
 
     if _mk_exporter is None:
        _mk_exporter = MarkdownExporter(parent=contents_manager)
     log = contents_manager.log
     
-    """ 要将指定codebook目录下的 .pynb .pdf 转换为 docs/_source/cookbook/*.rst 或 *.md
+    """ 将指定codebook目录下的 .pynb .pdf 转换为 docs/_source/cookbook/*.rst 或 *.md
     # base, ext = os.path.splitext(os_path)
     # script, resources = _script_exporter.from_filename(os_path)
     # script_fname = base + resources.get('output_extension', '.txt')
@@ -38,29 +41,32 @@ def script_post_save(model, os_path, contents_manager, **kwargs):
     # log.info("Saving markdown /%s", to_api_path(script_fname, contents_manager.root_dir))
     # breakpoint()
     # with io.open(script_fname, 'w', encoding='utf-8') as f:
-    #     f.write(script) """
+    #     f.write(script) 
+    """
     
     """ 提交 GitHub
-        将 notebook 提交 github 分支 Algorithms。   
+    # 将 notebook 提交 github 分支 Algorithms。   
     """
-    BookDir = os.path.dirname(__file__)
+    BookDir = os.path.dirname(os.path.realpath(__file__))
     try:
         outs = subprocess.Popen(f"cd {BookDir} && git status", stdout=subprocess.PIPE, shell=True)
         commit_des = outs.communicate()
-        commit_des = commit_des[0].decode('UTF-8').split("\n")[-4].replace("#\t","")
+        commit_des = commit_des[0].decode('UTF-8').split("\n")[4:]
+        commit_des = ",".join([des.replace("\t","") for des in commit_des if des.strip()])
         subprocess.call(f"cd {BookDir} && git add --all", shell=True)
         subprocess.call(f"cd {BookDir} && git commit -m '{commit_des}'", shell=True)
-        subprocess.call(f"cd {BookDir} && git pull origin  Algorithms", shell=True)
-        subprocess.call(f"cd {BookDir} && git push origin Algorithms", shell=True)
+        subprocess.call(f"cd {BookDir} && git pull origin  {GITBRANCH}", shell=True)
+        subprocess.call(f"cd {BookDir} && git push origin {GITBRANCH}", shell=True)
     except:
         subprocess.call(f"cd {BookDir} && git stash", shell=True)
     
 def script_pre_save(model, os_path, contents_manager, **kwargs):
-    BookDir = os.path.dirname(__file__)
+    BookDir = os.path.dirname(os.path.realpath(__file__))
+    global GITBRANCH
     try:
         subprocess.call(f"cd {BookDir} && git status", shell=True)
         subprocess.call(f"cd {BookDir} && git branch -a", shell=True)
-        subprocess.call(f"cd {BookDir} && git pull origin  Algorithms", shell=True)
+        subprocess.call(f"cd {BookDir} && git pull origin  {GITBRANCH}", shell=True)
     except:
         subprocess.call(f"cd {BookDir} && git stash", shell=True)
 
@@ -337,7 +343,7 @@ c.NotebookApp.open_browser = False
 #  
 #  The string should be of the form type:salt:hashed-password.
 #c.NotebookApp.password = ''
-c.NotebookApp.password = 'sha1:dcfd97bfcf5c:a2951f29f50b9e156b380af1c7866821362ebce0'
+c.NotebookApp.password = 'sha1:ac8da795d623:95e23ac3de76abee504405f23efe9cdce9df3025'
 
 ## Forces users to use a password for the Notebook server. This is useful in a
 #  multi user environment, for instance when everybody in the LAN can access each
