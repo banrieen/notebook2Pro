@@ -351,7 +351,7 @@ c.NotebookApp.password = 'sha1:ac8da795d623:95e23ac3de76abee504405f23efe9cdce9df
 #  
 #  In such a case, server the notebook server on localhost is not secure since
 #  any user can connect to the notebook server via ssh.
-#c.NotebookApp.password_required = False
+c.NotebookApp.password_required = True
 
 ## The port the notebook server will listen on.
 #c.NotebookApp.port = 8888
@@ -361,7 +361,6 @@ c.NotebookApp.password = 'sha1:ac8da795d623:95e23ac3de76abee504405f23efe9cdce9df
 
 ## DISABLED: use %pylab or %matplotlib in the notebook to enable matplotlib.
 #c.NotebookApp.pylab = 'disabled'
-
 ## If True, display a button in the dashboard to quit (shutdown the notebook
 #  server).
 #c.NotebookApp.quit_button = True
