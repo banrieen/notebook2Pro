@@ -8,12 +8,13 @@ Welcome to notebook's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Base Configuration
-   :name: mastertoc
+   :caption: Notebook
+   :name: notebook
    :glob:
 
-   config/*
-   cookBook/*
+
+   /home/notebook/Algorithms/*
+   docs/*
 
 
 

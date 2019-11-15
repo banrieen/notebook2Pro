@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'notebook'
-copyright = '2019, huixian'
-author = 'huixian'
+copyright = '2019, banrieen'
+author = 'banrieen'
 
 # The short X.Y version
 version = ''
@@ -48,6 +48,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'sphinx.ext.nbsphinx',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -56,7 +57,7 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-source_suffix = ['.rst', '.md']
+source_suffix = ['.rst', '.md', '.ipynb']
 # source_suffix = '.rst'
 
 # The master toctree document.
@@ -110,7 +111,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'notebookdoc'
+htmlhelp_basename = 'notebook'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -138,7 +139,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'notebook.tex', 'notebook Documentation',
-     'huixian', 'manual'),
+     'banrieen', 'manual'),
 ]
 
 
