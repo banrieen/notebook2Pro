@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'notebook'
+project = 'notebook papers'
 copyright = '2019, banrieen'
 author = 'banrieen'
 
