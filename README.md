@@ -21,6 +21,7 @@
     ./DesignPatterns  设计模式
     ./Draw  绘图
     ./Distributed 分布式相关
+    ./docs 一些 pdf 文档
     ./FrameworkServices  Web框架
     ./Game 游戏
     ./GUI 图形开发
@@ -30,7 +31,6 @@
     ./PicturesVideo 图形和视频处理
     ./MultiProcess 进程线程，协程
     ./Spider 爬虫对比
-    ./Sphinx Sphinx 配置和目录设置文件，源文件目录保持。
     ./System 系统操作
     ./VersionDevOps WEB部署CI/CD
     ./Jupyter_notebook_config.py notebook配置
@@ -70,27 +70,6 @@ systemctl start jupyter
 ```
   *不同系统下 bash 所在路径可能不同，以及登录用户可能不同，需要记得更新！*
 
-* 转换为静态 sphinx HTML，链接到个人主页 github.io:
-  这个原本是便于展示，尤其是一些 pdf，文本。现在主要是将 ipynb 转换为 web 文档。
-  使用 'nbsphinx' 插件，直接将源目录的 *.ipynb 转换为 HTML
-
-```
-# On Linux or MacOS, you should open your terminal and run the following command.
-
-$ pip install -U sphinx
-
-# Build static page
-
-sphinx-build -b html sourcedir builddir
-
-# or sphinx-build -b latexpdf sourcedir builddir
-
-# 在 notebook 的 post_save 中也添加 Sphinx 的更新操作
-
-# 也可以在 post_save_hook 中配置 nbconvert 但是它依赖 pandoc,有时候不好安装；再次还要组织目录和服务器。
-# 有时候直接使用页面工具 File 选项中的 Save as 或 Download as 也是比较轻松的。
-
-```
 * 最后注意，jupyter.service 启动时读取的是根目录下的 jupyter_notebook_config.py, 如果部署环境或路径改变，需要修改其中的 c.NotebookApp.notebook_dir ,当然在配置中我并没有启用它。此时，可能非常想再写一个 bash 脚本，或者找一个 CI/CD 工具来做，这已经比较简单了，粒度适中，不要反而搞得太复杂了。Nbextensions 很多不能用，或许也是其中的原因吧。
 
 *在Github.io 配置页面，不要使用 Jekyll theme。*
