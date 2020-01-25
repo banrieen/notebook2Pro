@@ -27,17 +27,18 @@ typedef struct BiTree_{
     int size;
     int (*compare)(const void *key1, const void *key2);
     void (*destory)(void *data);
-    BiTreeNode *root;
-}BiTreee;
+    BiTreenode *root;
+}BiTree;
 
 // Public interface
-void bitree_init(BiTree *tree, void (*destory)(void *data)));
+void bitree_init(BiTree *tree, void (*destory)(void *data));
 void bitree_destory(BiTree *tree);
-int bitree_ins_left(BiTree *tree, BiTreeNode *node, const void *data);
-int bitree_ins_right(BiTree *tree, BiTreeNode *node, const void *data);
-void bitree_rem_left(BiTree *tree, BiTreeNode *node);
-void bitree_rem_right(BiTree *tree, BiTreeNode *node);
+int bitree_ins_left(BiTree *tree, BiTreenode *node, const void *data);
+int bitree_ins_right(BiTree *tree, BiTreenode *node, const void *data);
+void bitree_rem_left(BiTree *tree, BiTreenode *node);
+void bitree_rem_right(BiTree *tree, BiTreenode *node);
 int bitree_merge(BiTree *merge, BiTree *left, BiTree *right, const void *data);
+
 
 #define bitree_size(tree) ((tree)->size)
 
@@ -53,5 +54,4 @@ int bitree_merge(BiTree *merge, BiTree *left, BiTree *right, const void *data);
 
 #define bitree_right(node) ((node)->right)
 
-#endif
-#endif /* bitree_h */
+#endif // bitree_h
