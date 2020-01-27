@@ -616,7 +616,9 @@ coverage.xml
 *.pot
 
 # Sphinx documentation
-docs/_build/
+Sphinx/
+# Sphinx/source/
+# Sphinx/build/
 
 # PyBuilder
 target/
@@ -633,7 +635,6 @@ local_settings.py
 db.sqlite3
 
 # IDE config
-# 
 .sonarlint/
 .vscode/
 .idea/
