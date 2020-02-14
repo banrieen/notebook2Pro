@@ -1,0 +1,23 @@
+section.samples {
+    margin-top: 10px;
+}
+
+section.samples .ms-Button, section.setup .ms-Button {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    min-width: 80px;
+    border-radius: 2px;
+    border: 1px solid #CDCDCD;
+}
+
+p{
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5em;
+  font-size: 16px;
+}
+h1{
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
