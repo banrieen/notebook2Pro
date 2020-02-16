@@ -34,8 +34,9 @@
     ./System 系统操作
     ./VersionDevOps WEB部署CI/CD
     ./Jupyter_notebook_config.py notebook配置
-    ./VisualStudioCpp (windows MinGW环境) 汇总以C/C++的算法数据结构，包含算法导论在线实例等
-    ./XcodeCpp (Mac OS Gnu环境) 汇总以C/C++的算法数据结构，包含算法导论在线实例等
+    ./VisualStudioCpp (windows MinGW环境) 汇总编篡《编篡珠玑 Programing Pearls SecindEditon》《编篡之美 Beauty Of Prpgraming》
+         《算法基础与在线实践—北京大学“程序设计与算法”慕课》和《算法精讲—C语言描述》C/C++基础算法数据结构的实例。
+    ./XcodeCpp (Mac OS Gnu环境) 汇总编篡《算法导论—Third Edition》《Unix/Linux编篡实践教程》和《问题求解和程序设计—第六版》C/C++算法数据结构实例。
     ./Jupyter_notebook_systemd.service 操作系统下使用 systemctl 管理服务  
 
 文件库管理

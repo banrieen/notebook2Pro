@@ -28,3 +28,9 @@ Steps to generate and consume a projection from third party metadata:
 Learn more about C++/WinRT here:
 http://aka.ms/cppwinrt/
 ========================================================================
+
+    主要内容：
+    
+    按照内容层次汇总编篡《编篡珠玑 Programing Pearls SecindEditon》，《编篡之美 Beauty Of Prpgraming》，《算法基础与在线实践—北京大学“程序设计与算法”慕课》和《算法精讲—C语言描述》C/C++基础算法数据结构的实例。
+    以 算法精讲，算法基础与在线实践 为主干，综合应用或插入编篡珠玑和编篡之美的理念案例。
+    辅助 Algorithms/ 目录下的章节，著成 “算法与程序设计”的应用篇；Xcode中的内容辅助以著成“算法与程序设计”的思索篇。
