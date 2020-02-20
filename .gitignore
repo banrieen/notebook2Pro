@@ -59,6 +59,14 @@ coverage.xml
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+.env
+db.sqlite3
 
 # Flask stuff:
 instance/
@@ -69,6 +77,9 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+Sphinx/
+Sphinx/source/
+Sphinx/build/
 
 # PyBuilder
 target/
@@ -124,8 +135,6 @@ dmypy.json
 .pyre/
 
 # C++ .gitignor 
-#
-#
 # Prerequisites
 *.d
 
@@ -173,6 +182,17 @@ dmypy.json
 *.user
 *.userosscache
 *.sln.docstates
+
+# C++ winRT Project
+.vs
+Debug
+Release
+Packages
+Generated Files
+
+*.dll
+*.winmd
+*.user
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -491,9 +511,6 @@ __pycache__/
 # OpenCover UI analysis results
 OpenCover/
 
-# Azure Stream Analytics local run output
-ASALocalRun/
-
 # MSBuild Binary and Structured Log
 *.binlog
 
@@ -615,24 +632,11 @@ coverage.xml
 *.mo
 *.pot
 
-# Sphinx documentation
-Sphinx/
-# Sphinx/source/
-# Sphinx/build/
+
 
 # PyBuilder
 target/
 
-
-### Django ###
-*.log
-*.pot
-*.pyc
-__pycache__/
-local_settings.py
-
-.env
-db.sqlite3
 
 # IDE config
 .sonarlint/

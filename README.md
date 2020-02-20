@@ -34,8 +34,9 @@
     ./System 系统操作
     ./VersionDevOps WEB部署CI/CD
     ./Jupyter_notebook_config.py notebook配置
-    ./VisualStudioCpp (windows MinGW环境) 汇总以C/C++的算法数据结构，包含算法导论在线实例等
-    ./XcodeCpp (Mac OS Gnu环境) 汇总以C/C++的算法数据结构，包含算法导论在线实例等
+    ./VisualStudioCpp (windows MinGW环境) 汇总编篡《编篡珠玑 Programing Pearls SecindEditon》《编篡之美 Beauty Of Prpgraming》
+         《算法基础与在线实践—北京大学“程序设计与算法”慕课》和《算法精讲—C语言描述》C/C++基础算法数据结构的实例。
+    ./XcodeCpp (Mac OS Gnu环境) 汇总编篡《算法导论—Third Edition》《Unix/Linux编篡实践教程》和《问题求解和程序设计—第六版》C/C++算法数据结构实例。
     ./Jupyter_notebook_systemd.service 操作系统下使用 systemctl 管理服务  
 
 文件库管理
@@ -70,8 +71,14 @@ systemctl start jupyter
 ```
   *不同系统下 bash 所在路径可能不同，以及登录用户可能不同，需要记得更新！*
 
-* 最后注意，jupyter.service 启动时读取的是根目录下的 jupyter_notebook_config.py, 如果部署环境或路径改变，需要修改其中的 c.NotebookApp.notebook_dir ,当然在配置中我并没有启用它。此时，可能非常想再写一个 bash 脚本，或者找一个 CI/CD 工具来做，这已经比较简单了，粒度适中，不要反而搞得太复杂了。Nbextensions 很多不能用，或许也是其中的原因吧。
+* 最后注意，jupyter.service 启动时读取的是根目录下的 jupyter_notebook_config.py, 如果部署环境或路径改变，需要修改其中的 c.NotebookApp.notebook_dir ,当然在配置中我并没有启用它。
 
 *在Github.io 配置页面，不要使用 Jekyll theme。*
 
 * 相关主题会整理发布到CSDN Blog：https://blog.csdn.net/banrieen
+
+* javaascript 扩展安装注意：
+    + 在当前非 root 用户（jupyter 也是在非 root 下启动）下，npm 安装包不要使用 sudo ，否则安装在 root 下将无法使用，衍生很多问题；
+    + ijskernel 找不到的问题，请执行 ijsinstall  --spec-path=full （不要带 sudo）;
+    + 扩展安装信息查询  jupyter kernelspec list --json ;
+    + ijavascript 安装提示 zeromq prerbuild问题，请采用这种方式安装 npm install -g  --unsafe-perm ijavascript;
