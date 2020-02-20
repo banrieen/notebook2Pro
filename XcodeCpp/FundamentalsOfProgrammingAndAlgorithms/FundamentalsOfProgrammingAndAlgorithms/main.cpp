@@ -9,14 +9,21 @@
 #include <iostream>
 
 #include "fac.hpp"
+#include "charSet.hpp"
 
+extern "C" {
+  #include "stringChar.h"
+}
 int fac();
 
 int main(int argc, const char * argv[])
 {
     // insert code here...
     // std::cout << "Hello, World!\n";
-    fac();
+    // fac();
+//    normal_char_io();
+    char_io();
+    
     return 0;
 }
 
