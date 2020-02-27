@@ -39,7 +39,7 @@
     ./XcodeCpp (Mac OS Gnu环境) 汇总编篡《算法导论—Third Edition》《Unix/Linux编篡实践教程》和《问题求解和程序设计—第六版》C/C++算法数据结构实例。
     ./Jupyter_notebook_systemd.service 操作系统下使用 systemctl 管理服务  
 
-文件库管理
+文档库管理
 ----------------------------------------------------        
 * Jupyter notebook： 同步到github; 
 
@@ -82,3 +82,33 @@ systemctl start jupyter
     + ijskernel 找不到的问题，请执行 ijsinstall  --spec-path=full （不要带 sudo）;
     + 扩展安装信息查询  jupyter kernelspec list --json ;
     + ijavascript 安装提示 zeromq prerbuild问题，请采用这种方式安装 npm install -g  --unsafe-perm ijavascript;
+    
+
+参考库索引
+---------------------------------------------------- 
+
+1. [算法精解 C语言描述（Mastering-Algorithms-with-C）案例代码库](https://github.com/banrieen/Mastering-Algorithms-with-C
+
+2. [C++ 算法大全](https://github.com/banrieen/The-Algorithms-With-C-Plus-Plus)
+
+3. [Jeff Erickson Algorithms ](https://github.com/jeffgerickson/algorithms)
+
+4. [Python 核心编程第二版](https://github.com/banrieen/Core-Python-Programming-2nd-Edition-Examples-and-Source-Code)
+
+  4.1 [http://corepython.com/cpp3ev2](https://github.com/banrieen/CPAP)
+
+5. [Python 算法实现](https://github.com/TheAlgorithms/Python)
+
+6. [程序员面试笔记](https://github.com/yangshun/tech-interview-handbook)
+
+7. [程序员面试笔记](https://github.com/jwasham/coding-interview-university)
+
+8. [安全扫描-OWASP ZAP](https://github.com/zaproxy/zaproxy)
+
+9. [ERP-ODOO](https://github.com/odoo/odoo)
+
+10. [bitcoin core](https://github.com/banrieen/bitcoin)
+
+11. [微信小程序开发示例](https://github.com/wechat-miniprogram/miniprogram-demo)
+
+12. [阿布量化交易系统](https://github.com/bbfamily/abu)
